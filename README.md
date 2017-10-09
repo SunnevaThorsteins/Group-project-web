@@ -18,10 +18,15 @@
   <li>Blockquote</li>
   <li>footer</li>
   <li>cardlist</li>
-  <li>card</li>
-  </li>
-<li>Hver gerir hvað:
-<li>Jónas:</li>
-</li>
+  <li>card</li><br>
+  <strong>Hver gerir hvað:</strong>
+  Jónas:<br>
+  <li></li>
+  Ásdís:<br>
+  <li></li>
+  Sunneva:<br>
+  <li></li>
+  Helga:<br>
+  <li></li>
 
 <strong>muna að pusha áður en við pullum</strong>
