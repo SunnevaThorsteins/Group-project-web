@@ -1,5 +1,5 @@
 # hopverkefni
-MUNA AÐ BREYTA ÞEGAR VIÐ ERUM BÚIN! (Þarf að vera með upplýsingar um keyrslu en ekki þetta hehe)
+MUNA AÐ BREYTA ÞEGAR VIÐ ERUM BÚIN! (Þarf að vera með upplýsingar um keyrslu en ekki þetta hehe) <br>
 Almennt: 
 Skrifa HTML fyrir
   O Index.html
