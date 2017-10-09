@@ -19,7 +19,7 @@
   <li>footer</li>
   <li>cardlist</li>
   <li>card</li><br>
-  <strong>Hver gerir hvað:</strong>
+  <strong>Hver gerir hvað:</strong><br>
   Jónas:<br>
   <li></li>
   Ásdís:<br>
