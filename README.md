@@ -32,6 +32,7 @@
   <li>Um html-ið</li>
   <li>Form html-ið</li>
   Helga:<br>
+  <li>Breytuskjalið</li>
   <li>Styleguid</li><br>
   Laus verkefni:<br>
   <li>Header/navigation Sass</li>
