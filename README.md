@@ -21,11 +21,13 @@
   <li>card</li><br>
   <strong>Hver gerir hvað:</strong><br>
   Jónas:<br>
-  <li></li>
+  <li>Footer html-ið</li>
   Ásdís:<br>
-  <li></li>
+  <li>Forsíðu html-ið</li>
+  <li>Setja font-ið inn í skrárnar</li>
   Sunneva:<br>
-  <li></li>
+  <li>Um html-ið</li>
+  <li>Form html-ið</li>
   Helga:<br>
   <li></li>
 
