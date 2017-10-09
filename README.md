@@ -1,5 +1,5 @@
 # hopverkefni
-MUNA AÐ BREYTA ÞEGAR VIÐ ERUM BÚIN! (Þarf að vera með upplýsingar um keyrslu en ekki þetta hehe) <br>
+<strong>MUNA AÐ BREYTA ÞEGAR VIÐ ERUM BÚIN!</strong> (Þarf að vera með upplýsingar um keyrslu en ekki þetta hehe) <br>
 <ul>Almennt: 
 <li>Skrifa HTML fyrir
   <li>Index.html</li>
@@ -21,7 +21,7 @@ MUNA AÐ BREYTA ÞEGAR VIÐ ERUM BÚIN! (Þarf að vera með upplýsingar um key
   <li>card</li>
   </li>
 <li>Hver gerir hvað:
-<li>Jónas gerir allt</li>
+<li>Jónas:</li>
 </li>
 
 <strong>muna að pusha áður en við pullum</strong>
