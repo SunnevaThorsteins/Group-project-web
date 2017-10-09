@@ -22,6 +22,7 @@
   <strong>Hver gerir hvað:</strong><br>
   Jónas:<br>
   <li>Footer html-ið</li>
+  <li>header html-ið</li>
   Ásdís:<br>
   <li>Forsíðu html-ið</li>
   <li>Setja font-ið inn í skrárnar</li>
