@@ -1,4 +1,6 @@
-@charset "UTF-8"
+$max-width: 1200px;
+$gutter: 20px;
+
 /*setjum bara box-sizing: border-box á allt því það var gert síðast :P */
 html {
   box-sizing: border-box;
@@ -10,3 +12,15 @@ html {
   padding: 0;
   margin: 0;
 }
+
+import@ "scss/header";
+import@ "scss/heading";
+import@ "scss/cover";
+import@ "scss/grid";
+import@ "scss/button";
+import@ "scss/text";
+import@ "scss/blockquote";
+import@ "scss/footer";
+import@ "scss/cardlist";
+import@ "scss/card";
+import@ "scss/form";
