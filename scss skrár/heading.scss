@@ -1,3 +1,15 @@
-.heading{
+.heading {
+  font-family: 'Roboto Slab', serif;
 
+  &--one {
+    font-size: 3em;
+  }
+
+  &--two {
+    font-size: 2em;
+  }
+
+  &--three {
+    font-size: 1em;
+  }
 }
