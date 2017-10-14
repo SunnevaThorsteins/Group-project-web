@@ -11,6 +11,24 @@ html {
   margin: 0;
 }
 
+html {
+  margin-right: $gutter;
+  margin-left: $gutter;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
 
 @import "scss/grid";
 @import "scss/header";
