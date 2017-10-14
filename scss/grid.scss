@@ -1,3 +1,17 @@
-.grid {
+.col {
+  padding-right: $gutter / 2;
+  padding-left: $gutter / 2;
+
+  &-12 {
+    @include columns(12);
+  }
+
+  &-6 {
+    @include columns(6);
+  }
+
+  &-4 {
+    @include columns(4);
+  }
 
 }
