@@ -13,14 +13,14 @@ html {
   margin: 0;
 }
 
-import@ "scss/header";
-import@ "scss/heading";
-import@ "scss/cover";
-import@ "scss/grid";
-import@ "scss/button";
-import@ "scss/text";
-import@ "scss/blockquote";
-import@ "scss/footer";
-import@ "scss/cardlist";
-import@ "scss/card";
-import@ "scss/form";
+@import "scss/header";
+@import "scss/heading";
+@import "scss/cover";
+@import "scss/grid";
+@import "scss/button";
+@import "scss/text";
+@import "scss/blockquote";
+@import "scss/footer";
+@import "scss/cardlist";
+@import "scss/card";
+@import "scss/form";
