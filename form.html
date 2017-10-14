@@ -7,6 +7,8 @@
   </title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="grid.css">
 </head>
 <header>
   <form class="button" action="index.html">
@@ -20,54 +22,84 @@
   </form>
 </header>
 <body>
-  <form>
-    <h2>Persónuupplýsingar</h2>
-    <label for="text">Nafn:</label><br>
-    <input type="text" id="text" required><br>
-    <label for="text">Kennitala:</label><br>
-    <input type="text" id="text" required placeholder="123456-7890"><br>
-    <label for="radio">Kyn:</label><br>
-    <input type="radio" name="Kyn" value="1">Kona<br>
-    <input type="radio" name="Kyn" value="2">Karl<br>
-    <input type="radio" name="Kyn" value="3">Annað<br>
-    <label for="tel">Sími:</label><br>
-    <input type="tel" required placeholder="+354 812 3456"><br>
-    <label for="text">Heimilisfang:</label><br>
-    <input type="text" id="text" required><br>
-    <input type="checkbox" checked> Skrá mig á póstlista
-    <h2>Greiðsluupplýsingar</h2>
-    <label for="select">Greiða með:</label><br>
-    <select>
-      <option value="Kreditkort">Kreditkorti</option>
-      <option value="Millifærsla">Millifærslu</option>
-      <option value="Reiðufé">Reiðufé</option>
-    </select><br>
-    <label for="text">Nafn á korti:</label><br>
-    <input type="text" id="text" required><br>
-    <label for="text">Kortanúmer:</label><br>
-    <input type="text" id="text" required placeholder="5999-9999-9999-9999"><br>
-    <label for="text">Mán</label>
-    <select>
-      <option value="1">01</option>
-      <option value="2">02</option>
-      <option value="3">03</option>
-      <option value="4">04</option>
-      <option value="5">05</option>
-      <option value="6">06</option>
-      <option value="7">07</option>
-      <option value="8">08</option>
-      <option value="9">09</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-    </select>
-    <label for="text">Ár</label>
-    <select>
-      <option value="2017">1</option>
-      <option value="2018">2</option>
-      <option value="2019">3</option>
-      <option value="2020">4</option>
-    </select><br>
+  <form class="form">
+    <div class="heading heading--two">
+      <h2>Persónuupplýsingar</h2>
+    </div>
+    <section class="section--one">
+      <div class="Nafn">
+        <label for="text">Nafn:</label><br>
+        <input type="text" required><br>
+      </div>
+      <div class="Kennitala">
+        <label for="text">Kennitala:</label><br>
+        <input type="text" required placeholder="123456-7890"><br>
+      </div>
+      <div class="Kyn">
+      <label for="radio">Kyn:</label><br>
+        <input type="radio" name="Kyn" value="1">Kona<br>
+        <input type="radio" name="Kyn" value="2">Karl<br>
+        <input type="radio" name="Kyn" value="3">Annað<br>
+      </div>
+      <div class="Simi">
+        <label for="tel">Sími:</label><br>
+        <input type="tel" required placeholder="+354 812 3456"><br>
+      </div>
+      <div class="Heim">
+        <label for="text">Heimilisfang:</label><br>
+        <input type="text" required><br>
+      </div>
+      <div class="postlisti">
+        <input type="checkbox" checked> Skrá mig á póstlista
+      </div>
+    </section>
+    <div class="heading heading--two">
+      <h2>Greiðsluupplýsingar</h2>
+    </div>
+    <section class="section--two">
+      <div class="Greida">
+        <label for="select">Greiða með:</label><br>
+        <select>
+          <option value="Kreditkort">Kreditkorti</option>
+          <option value="Millifærsla">Millifærslu</option>
+          <option value="Reiðufé">Reiðufé</option>
+        </select><br>
+      </div>
+      <div class="kortaNafn">
+        <label for="text">Nafn á korti:</label><br>
+        <input type="text" required><br>
+      </div>
+      <div class="kortanumer">
+        <label for="text">Kortanúmer:</label><br>
+        <input type="text" required placeholder="5999-9999-9999-9999"><br>
+      </div>
+      <div class="Man">
+        <label for="text">Mán</label>
+        <select>
+          <option value="1">01</option>
+          <option value="2">02</option>
+          <option value="3">03</option>
+          <option value="4">04</option>
+          <option value="5">05</option>
+          <option value="6">06</option>
+          <option value="7">07</option>
+          <option value="8">08</option>
+          <option value="9">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+      <div class="Ar">
+        <label for="text">Ár</label>
+        <select>
+          <option value="2017">1</option>
+          <option value="2018">2</option>
+          <option value="2019">3</option>
+          <option value="2020">4</option>
+        </select><br>
+      </div>
+    </section>
   </form>
 </body>
 <footer>
