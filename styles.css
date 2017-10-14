@@ -27,3 +27,6 @@ html {
     font-size: 2em; }
   .heading--three {
     font-size: 1em; }
+
+.form__section {
+  margin: auto; }
