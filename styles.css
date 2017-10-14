@@ -6,6 +6,24 @@ html {
   padding: 0;
   margin: 0; }
 
+<<<<<<< HEAD
+=======
+html {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+img {
+  max-width: 100%; }
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+>>>>>>> 01b35e9f4aad331e2126316a4c8dcea5c8b79f22
 .row {
   display: flex;
   flex-wrap: wrap;
