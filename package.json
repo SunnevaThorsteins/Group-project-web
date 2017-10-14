@@ -1,7 +1,7 @@
 {
-  "name": "verkefni6",
+  "name": "storaverkefni1",
   "version": "0.6.0",
-  "description": "Verkefni 6 í vefforritun 2017",
+  "description": "Storaverkefni 1 í vefforritun 2017",
   "main": "index.js",
   "scripts": {
     "browser-sync": "browser-sync start --server --files index.html styles.css",
