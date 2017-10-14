@@ -1,25 +1,28 @@
-@charset "UTF-8"
-/*setjum bara box-sizing: border-box á allt því það var gert síðast :P */
 html {
-  /* stylelint-disable-line */
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *, *:before, *:after {
-  /* stylelint-disable-line */
   box-sizing: inherit;
-  /* fjarlægja margin og padding */
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
-html {
-  /* stylelint-disable-line */
-  margin-right: 20px;
-  margin-left: 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5; }
-  @media (min-width: 1200px) {
-    html {
-      margin: 0; } }
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+  flex-direction: column;
+  background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
+  background-size: cover; }
+
+.header .content {
+  margin: auto; }
+
+.heading {
+  font-family: 'Roboto Slab', serif; }
+  .heading--one {
+    font-size: 3em; }
+  .heading--two {
+    font-size: 2em; }
+  .heading--three {
+    font-size: 1em; }
