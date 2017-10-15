@@ -1,3 +1,24 @@
+@import "scss/variables";
+
 .blockquote{
+  @include columns(6);
+  margin: 0 auto;
+  float: right;
+  padding: 2*$gutter;
+
+  &--one {
+    font-style: italic;
+    font-size: 1.5em;
+
+  }
+
+  &--two {
+    font-size: 0.75em;
+    margin-top: $gutter;
+  }
+
+
+
+
 
 }
