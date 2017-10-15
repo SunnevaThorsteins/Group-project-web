@@ -63,10 +63,11 @@ main {
   .heading--one {
     font-size: 3em; }
   .heading--two {
-    font-size: 2em; }
+    font-size: 1em; }
   .heading--three {
     font-size: 1em; }
 
+<<<<<<< HEAD
 .cardlist__row {
   display: flex;
   flex-wrap: wrap;
@@ -85,5 +86,17 @@ main {
       margin-left: 0;
       margin-right: 0; } }
 
+.text {
+  font-size: 1rem; }
+
 .form__section {
   margin: auto; }
+
+.form {
+  max-width: 1200px;
+  margin: 20px 20px;
+  display: flex; }
+  .form .section {
+    margin: 20px 60px;
+    display: flex;
+    flex-direction: column; }
