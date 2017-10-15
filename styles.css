@@ -72,3 +72,12 @@ main {
 
 .form__section {
   margin: auto; }
+
+.form {
+  max-width: 1200px;
+  margin: 20px 40px;
+  display: flex; }
+  .form .section {
+    margin: 20px 60px;
+    display: flex;
+    flex-direction: column; }
