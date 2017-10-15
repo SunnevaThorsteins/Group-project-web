@@ -1,27 +1,36 @@
 @import "scss/variables";
 
 .header {
-  /*display: flex;
   width: 100%;
+  min-height: 95vh;
+  display: cover;
   max-width: $max-width;
-  min-height: 100vh;
-  margin: 0 auto $gutter * 2;
-  flex-direction: column;
-  background-size: cover;*/
-  background: url(header.jpg) fixed;
-  background-size: cover;
-  background-position: 50% 50%;
-  padding: 12rem;
 
   &--one {
     background: transparent url('img/bg.jpg') no-repeat fixed 50% 50%;
+    background-size: cover;
+    background-position: 0 0;
   }
 
   &--one .content {
     margin: auto;
+    text-align: center;
+    padding: 12rem;
+    margin: 0 auto $gutter * 2;
   }
 
   &--two {
     background: transparent url('img/bg-subpage.jpg') no-repeat fixed 50% 50%;
+    //background-size: 100% 100%;
+    background-size: cover;
+    background-position: 0 0;
+  }
+
+  &--two .content {
+    margin: auto;
+    text-align: left;
+    padding: 12rem 0 12rem 0;
+    color: white;
+    word-break: break-all;
   }
 }

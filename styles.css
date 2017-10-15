@@ -46,32 +46,38 @@ main {
       width: 33.33333%; } }
 
 .header {
-  /*display: flex;
   width: 100%;
-  max-width: $max-width;
-  min-height: 100vh;
-  margin: 0 auto $gutter * 2;
-  flex-direction: column;
-  background-size: cover;*/
-  background: url(header.jpg) fixed;
-  background-size: cover;
-  background-position: 50% 50%;
-  padding: 12rem; }
+  min-height: 95vh;
+  display: cover;
+  max-width: 1200px; }
   .header--one {
-    background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%; }
+    background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
+    background-size: cover;
+    background-position: 0 0; }
   .header--one .content {
-    margin: auto; }
+    margin: auto;
+    text-align: center;
+    padding: 12rem;
+    margin: 0 auto 40px; }
   .header--two {
-    background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%; }
+    background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
+    background-size: cover;
+    background-position: 0 0; }
+  .header--two .content {
+    margin: auto;
+    text-align: left;
+    padding: 12rem 0 12rem 0;
+    color: white;
+    word-break: break-all; }
 
 .heading {
   font-family: 'Roboto Slab', serif; }
   .heading--one {
-    font-size: 3em; }
+    font-size: 4em; }
   .heading--two {
-    font-size: 1em;
+    font-size: 1.5em;
     margin-bottom: 20px;
-    margin-top: 20px; }
+    margin-top: 80px; }
   .heading--three {
     font-size: 1em; }
 
