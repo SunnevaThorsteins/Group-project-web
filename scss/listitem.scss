@@ -1,0 +1,28 @@
+.list__item {
+  width: 100%;
+  padding: $gutter;
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__heading {
+
+  }
+
+  &__text {
+
+  }
+
+  &__img {
+    max-width: 10px;
+    width: 100%;
+  }
+
+  &__image {
+    @include columns(6);
+  }
+}
