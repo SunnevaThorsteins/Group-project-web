@@ -1,3 +1,9 @@
+@import "scss/variables";
+
 .blockquote{
+  display: flex;
+  font-style: italic;
+  margin: 2*$gutter;
+
 
 }
