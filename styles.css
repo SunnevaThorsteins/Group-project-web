@@ -67,6 +67,12 @@ main {
   .heading--three {
     font-size: 1em; }
 
+.text {
+  font-size: 1rem; }
+
+.form__section {
+  margin: auto; }
+
 .form {
   max-width: 1200px;
   margin: 20px 20px;
