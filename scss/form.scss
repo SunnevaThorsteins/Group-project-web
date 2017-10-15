@@ -1,12 +1,14 @@
 @import "scss/variables";
 .form{
-  /*
   max-width: $max-width;
+  margin: auto;
+  /*
   margin: $gutter $gutter;
   display: flex;
   flex-wrap: wrap;*/
-  @media (max-width: 400px){
 
+  @media (max-width: 400px){
+    display: flex;
   }
 
   /*.section{
