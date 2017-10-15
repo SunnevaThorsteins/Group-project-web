@@ -79,6 +79,9 @@ main {
     flex-direction: column;*/ }
 
 .blockquote {
-  display: flex;
-  font-style: italic;
+  align-content: flex-end;
   margin: 40px; }
+  .blockquote--one {
+    font-style: italic;
+    display: flex;
+    align-items: flex-end; }
