@@ -5,10 +5,17 @@
   min-height: 100vh;
   margin: 0 auto $gutter * 2;
   flex-direction: column;
-  background: transparent url('img/bg.jpg') no-repeat fixed 50% 50%;
   background-size: cover;
-}
 
-.header .content {
-  margin: auto;
+  &--one {
+    background: transparent url('img/bg.jpg') no-repeat fixed 50% 50%;
+  }
+
+  &--one .content {
+    margin: auto;
+  }
+
+  &--two {
+
+  }  
 }

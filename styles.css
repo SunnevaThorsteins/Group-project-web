@@ -52,11 +52,11 @@ main {
   min-height: 100vh;
   margin: 0 auto 40px;
   flex-direction: column;
-  background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
   background-size: cover; }
-
-.header .content {
-  margin: auto; }
+  .header--one {
+    background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%; }
+  .header--one .content {
+    margin: auto; }
 
 .heading {
   font-family: 'Roboto Slab', serif; }
@@ -75,7 +75,7 @@ main {
 
 .card {
   width: 100%;
-  max-width: 500px;
+  padding: 20px;
   overflow: hidden;
   /*&__content {
     @media (min-width: 600px) {
@@ -88,14 +88,23 @@ main {
     align-items: center;
     padding: 15px; }
   .card__blockquote {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
     font-style: italic;
-    font-size: 2em; }
+    font-size: 18px;
+    background: pink; }
   .card__name {
-    font-size: 1em; }
+    display: flex;
+    align-items: baseline;
+    font-size: 1em;
+    background: green; }
   .card__text {
     font-size: 12px; }
   .card__img {
-    border-radius: 100%; }
+    width: 100%;
+    border-radius: 100%;
+    margin-bottom: 20px; }
 
 .cardlist__row {
   display: flex;
