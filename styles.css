@@ -85,15 +85,25 @@ main {
     flex-direction: column;*/ }
 
 .blockquote {
-  width: 50%;
+  width: 100%;
   padding-right: 10px;
   padding-left: 10px;
-  margin: 0 auto;
-  float: right;
-  padding: 40px; }
+  max-width: 100%;
+  margin-left: 20px; }
   .blockquote--one {
     font-style: italic;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    margin-bottom: 20px; }
+    .blockquote--one::first-letter {
+      text-indent: -20px; }
   .blockquote--two {
     font-size: 0.75em;
-    margin-top: 20px; }
+    margin-bottom: 20px; }
+  @media (min-width: 600px) {
+    .blockquote {
+      width: 50%;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin: 0 auto;
+      float: right;
+      padding: 40px 0 40px 40px; } }
