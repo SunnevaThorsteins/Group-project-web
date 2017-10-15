@@ -67,5 +67,8 @@ main {
   .heading--three {
     font-size: 1em; }
 
+.text {
+  font-size: 1rem; }
+
 .form__section {
   margin: auto; }
