@@ -1,3 +1,6 @@
-.text {
+@import "scss/variables";
 
+.text {
+  margin-bottom: $gutter;
+  font-style: normal;
 }

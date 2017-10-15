@@ -63,9 +63,15 @@ main {
   .heading--one {
     font-size: 3em; }
   .heading--two {
-    font-size: 1em; }
+    font-size: 1em;
+    margin-bottom: 20px;
+    margin-top: 40px; }
   .heading--three {
     font-size: 1em; }
+
+.text {
+  margin-bottom: 20px;
+  font-style: normal; }
 
 .form {
   /*
@@ -79,9 +85,15 @@ main {
     flex-direction: column;*/ }
 
 .blockquote {
-  align-content: flex-end;
-  margin: 40px; }
+  width: 50%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+  float: right;
+  padding: 40px; }
   .blockquote--one {
     font-style: italic;
-    display: flex;
-    align-items: flex-end; }
+    font-size: 1.5em; }
+  .blockquote--two {
+    font-size: 0.75em;
+    margin-top: 20px; }
