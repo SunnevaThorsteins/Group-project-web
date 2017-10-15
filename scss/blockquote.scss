@@ -1,3 +1,23 @@
+@import "scss/variables";
+
 .blockquote{
+  align-content: flex-end;
+  margin: 2*$gutter;
+
+  &--one {
+    font-style: italic;
+    display: flex;
+    align-items: flex-end;
+
+
+  }
+
+  &--two {
+
+  }
+
+
+
+
 
 }

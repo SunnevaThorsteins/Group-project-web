@@ -1,7 +1,6 @@
 @import "scss/variables";
 .form{
   max-width: $max-width;
-  margin: auto;
   /*
   margin: $gutter $gutter;
   display: flex;
@@ -9,15 +8,17 @@
 
   @media (max-width: 400px){
     display: flex;
+    flex-direction: column;
+
   }
 
-  /*.section{
-    max-width: $col*2;
+  .section{
+    @include colums(4);
+    /*max-width: $col*2;
     display: flex;
     flex-direction: column;*/
-
   }
-  .item{
 
+  input{
+      width: 100%;
   }
-}
