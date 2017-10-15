@@ -46,17 +46,23 @@ main {
       width: 33.33333%; } }
 
 .header {
-  display: flex;
+  /*display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: $max-width;
   min-height: 100vh;
-  margin: 0 auto 40px;
+  margin: 0 auto $gutter * 2;
   flex-direction: column;
-  background-size: cover; }
+  background-size: cover;*/
+  background: url(header.jpg) fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 12rem; }
   .header--one {
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%; }
   .header--one .content {
     margin: auto; }
+  .header--two {
+    background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%; }
 
 .heading {
   font-family: 'Roboto Slab', serif; }
@@ -65,7 +71,7 @@ main {
   .heading--two {
     font-size: 1em;
     margin-bottom: 20px;
-    margin-top: 40px; }
+    margin-top: 20px; }
   .heading--three {
     font-size: 1em; }
 
