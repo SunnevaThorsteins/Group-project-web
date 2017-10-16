@@ -1,27 +1,31 @@
-.button {
-  margin: 0 auto;
-  padding: 10px 5px;
-  border: 1px solid #666;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 256px;
+@import "scss/variables";
 
-  color: #eee;
-  background-color: #666;
-
-  text-decoration: none;
+.container {
   text-align: center;
-  font-size: 1rem;
 
-  &--one { //niðri á form síðu
+  .button {
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    width: auto;
 
-  }
+    color: #eee;
+    background-color: #666;
 
-  &--two { //uppi á index síðu
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
 
-  }
+      &--one { //niðri á form síðu
+        padding: 10px $gutter*4.5;
+      }
 
-  &--three { //niðri á index síðu
+      &--two { //niðri á index síðu
+        padding: 10px $gutter*4.5;
+      }
 
+      &--three { //uppi á index síðu
+        padding: 10px $gutter*3;
+      }
   }
 }

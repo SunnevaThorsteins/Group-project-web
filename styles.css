@@ -84,18 +84,24 @@ main {
   margin-bottom: 20px;
   font-style: normal; }
 
-.button {
-  margin: 0 auto;
-  padding: 10px 5px;
-  border: 1px solid #666;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 256px;
-  color: #eee;
-  background-color: #666;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1rem; }
+.container {
+  text-align: center; }
+  .container .button {
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    width: auto;
+    color: #eee;
+    background-color: #666;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer; }
+    .container .button--one {
+      padding: 10px 90px; }
+    .container .button--two {
+      padding: 10px 90px; }
+    .container .button--three {
+      padding: 10px 60px; }
 
 .card {
   width: 100%;
