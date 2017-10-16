@@ -1,4 +1,4 @@
-.list__item {
+.item {
   width: 100%;
   padding: $gutter;
   overflow: hidden;
@@ -6,23 +6,37 @@
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
+    background: pink;
   }
 
   &__heading {
-
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
+  &__p {
+    font-size: 1em;
   }
 
   &__img {
-    max-width: 10px;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    max-width: 20px;
+    width: 20px;
+    background: green;
   }
 
   &__image {
-    @include columns(6);
+    max-width: 100%;
+    width: 100%;
   }
 }

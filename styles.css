@@ -48,16 +48,15 @@ main {
 .header {
   width: 100%;
   min-height: 95vh;
-  display: cover;
-  max-width: 1200px; }
+  max-width: 1200px;
+  opacity: 0.9; }
   .header--one {
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
     background-size: cover;
-    background-position: 0 0; }
+    margin-top: 0; }
   .header--one .content {
     margin: auto;
     text-align: center;
-    padding: 12rem;
     margin: 0 auto 40px; }
   .header--two {
     background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
@@ -140,28 +139,47 @@ main {
       margin-left: 0;
       margin-right: 0; } }
 
-.list__item {
+.item {
   width: 100%;
   padding: 20px;
   overflow: hidden; }
-  .list__item__content {
+  .item__content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; }
-  .list__item__img {
-    max-width: 10px;
+    justify-content: center;
+    width: 100%;
+    background: pink; }
+  .item__heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: bold; }
+  .item__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .item__p {
+    font-size: 1em; }
+  .item__img {
+    display: flex;
+    flex-direction: row;
+    max-width: 20px;
+    width: 20px;
+    background: green; }
+  .item__image {
+    max-width: 100%;
     width: 100%; }
-  .list__item__image {
-    width: 50%;
-    padding-right: 10px;
-    padding-left: 10px; }
+
+.list__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px; }
 
 .list__col {
   width: 100%;
   padding-right: 10px;
   padding-left: 10px;
   display: flex;
-  flex-wrap: wrap;
   padding-right: 10px;
   padding-left: 10px;
   margin: 0 0 20px; }
