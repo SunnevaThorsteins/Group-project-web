@@ -4,7 +4,6 @@
   max-width: $max-width;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 
   .boxes{
     border-radius: 2px 2px 2px 2px;
@@ -30,17 +29,10 @@
   }
 
   @media (min-width: 400px){
-    &--one{
-      margin: 0 $gutter*4 0 0; /*upp, hægri, niður, vinstri*/
-    }
-
-  /*  &--two {
-      margin: 0 0 0 0;
-    }*/
   }
 
   @media (min-width: 600px){
-    margin: auto;
+    justify-content: space-between;
 
     /*
     &--one{
