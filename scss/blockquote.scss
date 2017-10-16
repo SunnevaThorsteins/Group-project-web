@@ -1,24 +1,29 @@
 @import "scss/variables";
 
-.blockquote{
-  @include columns(6);
-  margin: 0 auto;
-  float: right;
-  padding: 2*$gutter;
+.blockquote {
+  @include columns(12);
+  max-width: 100%;
+  margin-left: $gutter;
 
   &--one {
     font-style: italic;
     font-size: 1.5em;
+    margin-bottom: $gutter;
 
+    &::first-letter { //ath!!!
+      text-indent: -$gutter;
+    }
   }
 
   &--two {
     font-size: 0.75em;
-    margin-top: $gutter;
+    margin-bottom: $gutter;
   }
 
-
-
-
-
+  @media (min-width: 600px) {
+    @include columns(6);
+    margin: 0 auto;
+    float: right;
+    padding: 2*$gutter 0 2*$gutter 2*$gutter;
+  }
 }

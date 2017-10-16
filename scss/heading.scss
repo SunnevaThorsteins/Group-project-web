@@ -1,14 +1,16 @@
+@import "scss/variables";
+
 .heading {
   font-family: 'Roboto Slab', serif;
 
   &--one {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   &--two {
-    font-size: 1em;
+    font-size: 1.5em;
     margin-bottom: $gutter;
-    margin-top: 2*$gutter;
+    margin-top: 4*$gutter;
   }
 
   &--three {

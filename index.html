@@ -9,45 +9,57 @@
     <link rel="stylesheet" href="grid.css">
   </head>
   <body>
-    <header class="header">
-      <form class="button" action="index.html">
-        <input type="submit" value="Foobar">
-      </form>
-      <form class="button" action="um.html">
-        <input type="submit" value="Um">
-      </form>
-      <form class="button" action="form.html">
-        <input type="submit" value="Kaupa">
-      </form>
-    <div class="content">
-      <h2 class="heading heading--two">Í fyrsta skipti á Íslandi</h2>
-      <h1 class="heading heading--one">Fooþjónustan</h2>
-      <button class="button">Kaupa</button>
-    </div>
+    <header class="header header--one">
+      <div class = "bar">
+        <form  class="button" action="index.html">
+          <input class="button button--one" type="submit" value="Fooþjónustan">
+        </form>
+        <form class="button" action="um.html">
+          <input class="button button--two" type="submit" value="Um">
+        </form>
+        <form class="button" action="form.html">
+          <input class="button button--three" type="submit" value="Kaupa">
+        </form>
+      </div>
+      <div class="content">
+        <h2 class="heading heading--two">Í fyrsta skipti á Íslandi</h2>
+        <h1 class="heading heading--one">Fooþjónustan</h2>
+        <button class="button">Kaupa</button>
+      </div>
     </header>
     <main>
       <section>
-        <div class="row">
-          <div class="col col-6">
-            <img src="img/check.svg" alt="">
-            <h3 class="heading heading--three">Ódýr og góð þjónusta</h3>
-              <p class="text__p">
+        <div class="list">
+          <div class="list__content">
+            <img src="img/check.svg" class="list__img" alt="">
+            <h3 class="list__heading">Ódýr og góð þjónusta</h3>
+              <p class="list__text">
                 Gerir nákvæmlega það sem þú býst við. Ekki láta þessa frábæru nýjung framhjá þér fara.
               </p>
-            <img src="img/check.svg" alt="">
-            <h3 class="heading heading--three">Þægilegt í amstri dagsins</h3>
-              <p class="text__p">
-                Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.
-              </p>
-            <img src="img/check.svg" alt="">
-            <h3 class="heading heading--three">Nauðsynlegt á hvert heimili</h3>
-              <p class="text__p">
-                Hvort sem er fyrir einstaklinga eða stórfjölskyldur.
-              </p>
-            </h3>
           </div>
         </div>
-        <div class="row">
+
+        <div class="list">
+          <div class="list__content">
+            <img src="img/check.svg" class="list__img" alt="">
+            <h3 class="list__heading">Þægilegt í amstri dagsins</h3>
+              <p class="list__text">
+                Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.
+              </p>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="list__content">
+            <img src="img/check.svg" class="list__img" alt="">
+            <h3 class="list__heading">Nauðsynlegt á hvert heimili</h3>
+              <p class="list__text">
+                Hvort sem er fyrir einstaklinga eða stórfjölskyldur.
+              </p>
+          </div>
+        </div>
+
+        <div class="list">
           <div class="col col-6">
             <img src="img/image.jpg" class="img" alt="">
           </div>
