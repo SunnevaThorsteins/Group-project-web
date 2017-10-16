@@ -6,10 +6,10 @@
   max-width: $max-width;
   opacity: 0.9;
 
-
   &--one {
     background: transparent url('img/bg.jpg') no-repeat fixed 50% 50%;
     background-size: cover;
+    margin-top: 0;
   }
 
   &--one .content {

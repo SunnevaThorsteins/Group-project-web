@@ -31,31 +31,33 @@
     <form class="form">
       <h2 class="heading heading--two">Persónuupplýsingar</h2>
       <label for="text">Nafn:</label>
-      <input type="text" required><br>
+      <input class="boxes" type="text" required><br>
       <label for="text">Kennitala:</label>
-      <input type="text" required placeholder="123456-7890"><br>
+      <input class="boxes" type="text" required placeholder="123456-7890"><br>
       <label for="radio">Kyn:</label>
-      <input type="radio" name="Kyn" value="1">Kona
-      <input type="radio" name="Kyn" value="2">Karl
-      <input type="radio" name="Kyn" value="3">Annað
+      <div class="genders">
+        <input type="radio" name="gender" value="1">Kona<br>
+        <input type="radio" name="gender" value="2">Karl<br>
+        <input type="radio" name="gender" value="3">Annað<br>
+      </div><br>
       <label for="tel">Sími:</label>
-      <input type="tel" required placeholder="+354 812 3456"><br>
+      <input class="boxes" type="tel" required placeholder="+354 812 3456"><br>
       <label for="text">Heimilisfang:</label>
-      <input type="text" required><br>
+      <input class="boxes" type="text" required><br>
       <input type="checkbox" checked> Skrá mig á póstlista
     </form>
     <form class="form">
       <h2 class="heading heading--two">Greiðsluupplýsingar</h2>
       <label for="select">Greiða með:</label>
-      <select>
+      <select class="boxes">
         <option value="Kreditkort">Kreditkorti</option>
         <option value="Millifærsla">Millifærslu</option>
         <option value="Reiðufé">Reiðufé</option>
       </select><br>
       <label for="text">Nafn á korti:</label>
-      <input type="text" required><br>
+      <input class="boxes" type="text" required><br>
       <label for="text">Kortanúmer:</label>
-      <input type="text" required placeholder="5999-9999-9999-9999"><br>
+      <input class="boxes" type="text" required placeholder="5999-9999-9999-9999"><br>
       <p>Gildistími:</p>
       <div class="date">
         <label class="labels" for="select">Mán</label>
@@ -81,7 +83,7 @@
           <option value="2020">4</option>
         </select>
       </div>
-    </form>
+    </form><br>
   </main>
   <div class="button">
     <button class="button button--one">Panta</button>
