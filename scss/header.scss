@@ -10,7 +10,6 @@
   &--one {
     background: transparent url('img/bg.jpg') no-repeat fixed 50% 50%;
     background-size: cover;
-    background-position: 0 0;
   }
 
   &--one .content {
@@ -20,7 +19,7 @@
   }
 
   &--two {
-    background: transparent url('img/bg-subpage.jpg') no-repeat;
+    background: transparent url('img/bg-subpage.jpg') no-repeat fixed 50% 50%;
     background-size: cover;
     background-position: 0 0;
   }
