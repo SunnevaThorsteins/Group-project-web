@@ -37,15 +37,14 @@
   }
 
   @media (min-width: 1200px){
-    /*@include columns(4);
-    display:inline-flex;
-    justify-content: space-around;
+
+    /*
     &--one{
-      margin: 0 $gutter*5 0 $gutter*4.6;
+      margin: 0 $gutter*2 0 0; upp, hægri, niður, vinstri
     }
 
     &--two {
-      margin: 0 $gutter*4.6 0 $gutter*5.05;
-    }*/
-  }
+      margin: 0 auto;
+    }
+  }*/
 }

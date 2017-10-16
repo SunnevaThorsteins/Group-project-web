@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box; }
 
@@ -194,7 +195,13 @@ main {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  /*
+  @media (min-width: 600px){
+    /*
+    justify-content: space-between;
+    margin: 0 $gutter;
+    */ }
   .form .boxes {
     border-radius: 2px 2px 2px 2px;
     -webkit-appearance: none; }
@@ -211,24 +218,17 @@ main {
       width: 100%;
       flex-grow: 2;
       text-align: center; }
-  @media (min-width: 600px) {
-    .form {
-      /*
-    justify-content: space-between;
-    margin: 0 $gutter;
-    */ } }
-  @media (min-width: 1200px) {
-    .form {
-      /*@include columns(4);
-    display:inline-flex;
-    justify-content: space-around;
+
+@media (min-width: 1200px) {
+  /*
     &--one{
-      margin: 0 $gutter*5 0 $gutter*4.6;
+      margin: 0 $gutter*2 0 0; upp, hægri, niður, vinstri
     }
 
     &--two {
-      margin: 0 $gutter*4.6 0 $gutter*5.05;
-    }*/ } }
+      margin: 0 auto;
+    }
+  }*/ }
 
 .blockquote {
   width: 100%;
