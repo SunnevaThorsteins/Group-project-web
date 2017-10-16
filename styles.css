@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box; }
 
@@ -44,12 +45,20 @@ main {
       width: 50%; }
     .col-sm-4 {
       width: 33.33333%; } }
+  @media (max-width: 399px) {
+    .col-smm-12 {
+      width: 100%; }
+    .col-smm-6 {
+      width: 50%; }
+    .col-smm-4 {
+      width: 33.33333%; } }
 
 .header {
   width: 100%;
   min-height: 95vh;
   max-width: 1200px;
-  opacity: 0.9; }
+  opacity: 0.9;
+  margin: 0 auto; }
   .header--one {
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
     background-size: cover;
@@ -74,11 +83,12 @@ main {
   .heading--one {
     font-size: 4em; }
   .heading--two {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     margin-top: 80px; }
   .heading--three {
-    font-size: 1em; }
+    font-size: 1em;
+    text-align: center; }
 
 .text {
   margin-bottom: 20px;
@@ -159,58 +169,29 @@ main {
       margin-right: 0; } }
 
 .item {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  padding: 20px;
-  overflow: hidden; }
+  padding: 0;
+  overflow: hidden;
+  margin: 80px 0; }
   .item__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    background: pink; }
+    width: 100%; }
   .item__heading {
     font-family: 'Roboto Slab', serif;
     font-size: 18px;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-left: 5px; }
   .item__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .item__p {
     font-size: 1em; }
   .item__img {
-    display: flex;
-    flex-direction: row;
-    max-width: 20px;
-    width: 20px;
-    background: green; }
-  .item__image {
-    max-width: 100%;
-    width: 100%; }
-
-.list__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px; }
-
-.list__col {
-  width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-  display: flex;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin: 0 0 20px; }
-  @media (min-width: 600px) {
-    .list__col {
-      width: 50%;
-      padding-right: 10px;
-      padding-left: 10px;
-      margin-left: 0;
-      margin-right: 0; } }
+    height: 25px;
+    width: 25px; }
 
 .form {
+  background-color: pink;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
@@ -221,20 +202,36 @@ main {
   .form .date {
     display: flex;
     justify-content: space-between; }
-  .form .labels {
-    width: 100%;
-    flex-grow: 2; }
-  .form .items {
-    border-radius: 2px 2px 2px 2px;
-    -webkit-appearance: none;
-    width: 100%;
-    flex-grow: 2; }
+    .form .date .labels {
+      width: 100%;
+      flex-grow: 2;
+      text-align: center; }
+    .form .date .boxes {
+      border-radius: 2px 2px 2px 2px;
+      -webkit-appearance: none;
+      width: 100%;
+      flex-grow: 2;
+      text-align: center; }
+  @media (min-width: 400px) {
+    .form {
+      /*  &--two {
+      margin: 0 0 0 0;
+    }*/ }
+      .form--one {
+        margin: 0 80px 0 0;
+        /*upp, hægri, niður, vinstri*/ } }
   @media (min-width: 600px) {
     .form {
-      display: inline-flex;
-      flex-direction: column;
-      margin: 0 20px;
-      justify-content: space-around; } }
+      margin: auto;
+      /*
+    &--one{
+      margin: 0 $gutter*2 0 0; upp, hægri, niður, vinstri
+    }
+
+    &--two {
+      margin: 0 auto;
+    }
+  }*/ } }
 
 .blockquote {
   width: 100%;
@@ -260,16 +257,36 @@ main {
       float: right;
       padding: 40px 0 40px 40px; } }
 
-.prufa {
-  display: flex; }
-  .prufa--one {
-    float: left; }
-  .prufa--two {
-    float: right; }
+.container--two {
+  display: inline-flex;
+  flex-direction: row; }
 
 .bar {
-  background-color: rgba(0, 0, 0, 0.7);
-  list-style: none; }
+  background-color: rgba(0, 0, 0, 0.5);
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 60px; }
   .bar--content a {
     text-decoration: none;
     color: white; }
+  .bar--one {
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: transparent;
+    padding-left: 20px; }
+  .bar--two {
+    background-color: transparent; }
+  .bar--three {
+    background-color: #666;
+    border-radius: 4px;
+    margin: 0 20px;
+    padding: 0 20px;
+    max-height: 30px;
+    align-self: center; }
