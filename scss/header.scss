@@ -5,10 +5,7 @@
   min-height: 95vh;
   max-width: $max-width;
   opacity: 0.9;
-<<<<<<< HEAD
-=======
-
->>>>>>> b4fc681b6877c2c58a3e23fddb59e11d15a6b3e1
+  margin: 0 auto;
 
   &--one {
     background: transparent url('img/bg.jpg') no-repeat fixed 50% 50%;
@@ -19,10 +16,6 @@
   &--one .content {
     margin: auto;
     text-align: center;
-<<<<<<< HEAD
-    //padding: 12rem;
-=======
->>>>>>> b4fc681b6877c2c58a3e23fddb59e11d15a6b3e1
     margin: 0 auto $gutter * 2;
   }
 
