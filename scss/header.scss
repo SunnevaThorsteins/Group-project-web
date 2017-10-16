@@ -5,17 +5,17 @@
   min-height: 95vh;
   display: cover;
   max-width: $max-width;
+  opacity: 0.9;
 
   &--one {
     background: transparent url('img/bg.jpg') no-repeat fixed 50% 50%;
     background-size: cover;
-    background-position: 0 0;
   }
 
   &--one .content {
     margin: auto;
     text-align: center;
-    padding: 12rem;
+    //padding: 12rem;
     margin: 0 auto $gutter * 2;
   }
 
