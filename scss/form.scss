@@ -29,14 +29,18 @@
     }
   }
 
-  @media (min-width: 600px){
-    /*
-    justify-content: space-between;
-    margin: 0 $gutter;
-    */
+  @media (min-width: 400px){
+    &--one{
+      margin: 0 $gutter*4 0 0; /*upp, hægri, niður, vinstri*/
+    }
+
+  /*  &--two {
+      margin: 0 0 0 0;
+    }*/
   }
 
-  @media (min-width: 1200px){
+  @media (min-width: 600px){
+    margin: auto;
 
     /*
     &--one{
