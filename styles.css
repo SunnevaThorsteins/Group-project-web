@@ -260,6 +260,13 @@ main {
       float: right;
       padding: 40px 0 40px 40px; } }
 
+.prufa {
+  display: flex; }
+  .prufa--one {
+    float: left; }
+  .prufa--two {
+    float: right; }
+
 .bar {
   background-color: rgba(0, 0, 0, 0.7);
   list-style: none; }
