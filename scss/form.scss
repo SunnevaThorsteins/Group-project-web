@@ -5,6 +5,11 @@
   flex-direction: column;
   flex-wrap: wrap;
 
+  .boxes{
+    border-radius: 2px 2px 2px 2px;
+    -webkit-appearance: none;
+  }
+
   .date{
     display: flex;
     justify-content: space-between;
@@ -16,6 +21,8 @@
   }
 
   .items{
+    border-radius: 2px 2px 2px 2px;
+    -webkit-appearance: none;
     width: 100%;
     flex-grow: 2;
   }
