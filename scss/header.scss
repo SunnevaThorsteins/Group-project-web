@@ -3,25 +3,31 @@
 .header {
   width: 100%;
   min-height: 95vh;
-  display: cover;
   max-width: $max-width;
   opacity: 0.9;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b4fc681b6877c2c58a3e23fddb59e11d15a6b3e1
 
   &--one {
     background: transparent url('img/bg.jpg') no-repeat fixed 50% 50%;
     background-size: cover;
+    margin-top: 0;
   }
 
   &--one .content {
     margin: auto;
     text-align: center;
+<<<<<<< HEAD
     //padding: 12rem;
+=======
+>>>>>>> b4fc681b6877c2c58a3e23fddb59e11d15a6b3e1
     margin: 0 auto $gutter * 2;
   }
 
   &--two {
-    background: transparent url('img/bg-subpage.jpg') no-repeat fixed 50% 50%;
-    //background-size: 100% 100%;
+    background: transparent url('img/bg-subpage.jpg') no-repeat;
     background-size: cover;
     background-position: 0 0;
   }
