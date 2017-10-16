@@ -23,59 +23,39 @@
 </header>
 <body>
   <form class="form">
-    <section class="section section--one">
-      <div class="heading heading--two">
-        <h2>Persónuupplýsingar</h2>
-      </div>
-      <div class="item--one">
+    <section class="form__section section">
+      <div class="section__items">
+        <h2 class="items__item heading heading--two">Persónuupplýsingar</h2>
         <label for="text">Nafn:</label><br>
-        <input type="text" required><br>
-      </div>
-      <div class="item--two">
+        <input class="items__item" type="text" required><br>
         <label for="text">Kennitala:</label><br>
-        <input type="text" required placeholder="123456-7890"><br>
-      </div>
-      <div class="item--three">
-      <label for="radio">Kyn:</label><br>
-        <input type="radio" name="Kyn" value="1">Kona<br>
-        <input type="radio" name="Kyn" value="2">Karl<br>
-        <input type="radio" name="Kyn" value="3">Annað<br>
-      </div>
-      <div class="item--four">
+        <input class="items__item" type="text" required placeholder="123456-7890"><br>
+        <label for="radio">Kyn:</label><br>
+        <input class="items__item" type="radio" name="Kyn" value="1">Kona<br>
+        <input class="items__item" type="radio" name="Kyn" value="2">Karl<br>
+        <input class="items__item" type="radio" name="Kyn" value="3">Annað<br>
         <label for="tel">Sími:</label><br>
-        <input type="tel" required placeholder="+354 812 3456"><br>
-      </div>
-      <div class="item--five">
+        <input class="items__item" type="tel" required placeholder="+354 812 3456"><br>
         <label for="text">Heimilisfang:</label><br>
-        <input type="text" required><br>
-      </div>
-      <div class="item--six">
-        <input type="checkbox" checked> Skrá mig á póstlista
+        <input class="items__item" type="text" required><br>
+        <input class="items__item" type="checkbox" checked> Skrá mig á póstlista
       </div>
     </section>
-    <section class="section section--two">
-      <div class="heading heading--two">
-        <h2>Greiðsluupplýsingar</h2>
-      </div>
-      <div class="item--seven">
+    <section class="form__section section">
+      <div class="section__items">
+        <h2 class="heading heading--two">Greiðsluupplýsingar</h2>
         <label for="select">Greiða með:</label><br>
-        <select>
+        <select class="items__item" >
           <option value="Kreditkort">Kreditkorti</option>
           <option value="Millifærsla">Millifærslu</option>
           <option value="Reiðufé">Reiðufé</option>
         </select><br>
-      </div>
-      <div class="item--eight">
         <label for="text">Nafn á korti:</label><br>
-        <input type="text" required><br>
-      </div>
-      <div class="item--nine">
+        <input class="items__item" type="text" required><br>
         <label for="text">Kortanúmer:</label><br>
-        <input type="text" required placeholder="5999-9999-9999-9999"><br>
-      </div>
-      <div class="item--ten">
+        <input class="items__item" type="text" required placeholder="5999-9999-9999-9999"><br>
         <label for="text">Mán</label>
-        <select>
+        <select class="items__item">
           <option value="1">01</option>
           <option value="2">02</option>
           <option value="3">03</option>
@@ -90,7 +70,7 @@
           <option value="12">12</option>
         </select>
         <label for="text">Ár</label>
-        <select>
+        <select class="items__item">
           <option value="2017">1</option>
           <option value="2018">2</option>
           <option value="2019">3</option>
