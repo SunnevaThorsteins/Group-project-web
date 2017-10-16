@@ -48,18 +48,18 @@ main {
 .header {
   width: 100%;
   min-height: 95vh;
-  display: cover;
   max-width: 1200px;
   opacity: 0.9; }
   .header--one {
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
-    background-size: cover; }
+    background-size: cover;
+    background-position: 0 0; }
   .header--one .content {
     margin: auto;
     text-align: center;
     margin: 0 auto 40px; }
   .header--two {
-    background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
+    background: transparent url("img/bg-subpage.jpg") no-repeat;
     background-size: cover;
     background-position: 0 0; }
   .header--two .content {
