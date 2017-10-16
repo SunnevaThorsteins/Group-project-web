@@ -17,6 +17,7 @@
     margin: auto;
     text-align: center;
     margin: 0 auto $gutter * 2;
+    word-break: break-all;
   }
 
   &--two {
