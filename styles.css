@@ -282,11 +282,15 @@ main {
     background-color: transparent;
     padding-left: 20px; }
   .bar--two {
-    background-color: transparent; }
+    padding-right: 20px; }
   .bar--three {
-    background-color: #666;
-    border-radius: 4px;
-    margin: 0 20px;
-    padding: 0 20px;
-    max-height: 30px;
-    align-self: center; }
+    display: none; }
+  @media (min-width: 500px) {
+    .bar--three {
+      display: initial;
+      background-color: #666;
+      border-radius: 4px;
+      margin: 0 20px;
+      padding: 0 20px;
+      max-height: 30px;
+      align-self: center; } }

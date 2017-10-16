@@ -34,15 +34,22 @@
   }
 
   &--two {
-    background-color: transparent;
+    padding-right: $gutter;
   }
 
   &--three {
-    background-color: #666;
-    border-radius: 4px;
-    margin: 0 $gutter;
-    padding: 0 $gutter;
-    max-height: $gutter*1.5;
-    align-self: center;
+    display: none;
+  }
+
+  @media (min-width: 500px) {
+    &--three {
+      display: initial;
+      background-color: #666;
+      border-radius: 4px;
+      margin: 0 $gutter;
+      padding: 0 $gutter;
+      max-height: $gutter*1.5;
+      align-self: center;
+    }
   }
 }
