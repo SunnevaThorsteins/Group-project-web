@@ -11,74 +11,55 @@
   <link rel="stylesheet" href="grid.css">
 </head>
 <header class = "header header--two">
-  <form class="button" action="index.html">
-    <input type="submit" value="Foobar">
-  </form>
-  <form class="button" action="um.html">
-    <input type="submit" value="Um">
-  </form>
-  <form class="button" action="form.html">
-    <input type="submit" value="Kaupa">
-  </form>
+  <div class = "bar">
+    <form  class="button" action="index.html">
+      <input class="button button--one" type="submit" value="Fooþjónustan">
+    </form>
+    <form class="button" action="um.html">
+      <input class="button button--two" type="submit" value="Um">
+    </form>
+    <form class="button" action="form.html">
+      <input class="button button--three" type="submit" value="Kaupa">
+    </form>
+  </div>
   <div class="content">
-    <h1 class="heading heading--one">Kaupa</h2>
+    <h2 class="heading heading--one">Kaupa</h2>
   </div>
 </header>
 <body>
-  <form class="form">
-    <section class="section section--one">
-      <div class="heading heading--two">
-        <h2>Persónuupplýsingar</h2>
-      </div>
-      <div class="item Nafn">
-        <label for="text">Nafn:</label><br>
-        <input type="text" required><br>
-      </div>
-      <div class="item Kennitala">
-        <label for="text">Kennitala:</label><br>
-        <input type="text" required placeholder="123456-7890"><br>
-      </div>
-      <div class="item Kyn">
-      <label for="radio">Kyn:</label><br>
-        <input type="radio" name="Kyn" value="1">Kona<br>
-        <input type="radio" name="Kyn" value="2">Karl<br>
-        <input type="radio" name="Kyn" value="3">Annað<br>
-      </div>
-      <div class="item Simi">
-        <label for="tel">Sími:</label><br>
-        <input type="tel" required placeholder="+354 812 3456"><br>
-      </div>
-      <div class="item Heim">
-        <label for="text">Heimilisfang:</label><br>
-        <input type="text" required><br>
-      </div>
-      <div class="item postlisti">
-        <input type="checkbox" checked> Skrá mig á póstlista
-      </div>
-    </section>
-    <section class="section section--two">
-      <div class="heading heading--two">
-        <h2>Greiðsluupplýsingar</h2>
-      </div>
-      <div class="item Greida">
-        <label for="select">Greiða með:</label><br>
-        <select>
-          <option value="Kreditkort">Kreditkorti</option>
-          <option value="Millifærsla">Millifærslu</option>
-          <option value="Reiðufé">Reiðufé</option>
-        </select><br>
-      </div>
-      <div class="item kortaNafn">
-        <label for="text">Nafn á korti:</label><br>
-        <input type="text" required><br>
-      </div>
-      <div class="item kortanumer">
-        <label for="text">Kortanúmer:</label><br>
-        <input type="text" required placeholder="5999-9999-9999-9999"><br>
-      </div>
-      <div class="item Man">
-        <label for="text">Mán</label>
-        <select>
+  <main>
+    <form class="form">
+      <h2 class="heading heading--two">Persónuupplýsingar</h2>
+      <label for="text">Nafn:</label>
+      <input type="text" required><br>
+      <label for="text">Kennitala:</label>
+      <input type="text" required placeholder="123456-7890"><br>
+      <label for="radio">Kyn:</label>
+      <input type="radio" name="Kyn" value="1">Kona
+      <input type="radio" name="Kyn" value="2">Karl
+      <input type="radio" name="Kyn" value="3">Annað
+      <label for="tel">Sími:</label>
+      <input type="tel" required placeholder="+354 812 3456"><br>
+      <label for="text">Heimilisfang:</label>
+      <input type="text" required><br>
+      <input type="checkbox" checked> Skrá mig á póstlista
+    </form>
+    <form class="form">
+      <h2 class="heading heading--two">Greiðsluupplýsingar</h2>
+      <label for="select">Greiða með:</label>
+      <select>
+        <option value="Kreditkort">Kreditkorti</option>
+        <option value="Millifærsla">Millifærslu</option>
+        <option value="Reiðufé">Reiðufé</option>
+      </select><br>
+      <label for="text">Nafn á korti:</label>
+      <input type="text" required><br>
+      <label for="text">Kortanúmer:</label>
+      <input type="text" required placeholder="5999-9999-9999-9999"><br>
+      <p>Gildistími:</p>
+      <div class="date">
+        <label class="labels" for="select">Mán</label>
+        <select class="items">
           <option value="1">01</option>
           <option value="2">02</option>
           <option value="3">03</option>
@@ -92,19 +73,19 @@
           <option value="11">11</option>
           <option value="12">12</option>
         </select>
-      </div>
-      <div class="item Ar">
-        <label for="text">Ár</label>
-        <select>
+        <label class="labels" for="select">Ár</label>
+        <select class="items">
           <option value="2017">1</option>
           <option value="2018">2</option>
           <option value="2019">3</option>
           <option value="2020">4</option>
-        </select><br>
+        </select>
       </div>
-    </section>
-  </form>
-  <button class="button">Pannta</button>
+    </form>
+  </main>
+  <div class="button">
+    <button class="button--one">Panta</button>
+  </div>
 </body>
 <footer>
   <p>Foothjonustan</p>

@@ -1,21 +1,34 @@
 @import "scss/variables";
 .form{
-  /*
   max-width: $max-width;
-  margin: $gutter $gutter;
   display: flex;
-  flex-wrap: wrap;*/
-  @media (max-width: 400px){
+  flex-direction: column;
+  flex-wrap: wrap;
 
-  }
-
-  /*.section{
-    max-width: $col*2;
+  .date{
     display: flex;
-    flex-direction: column;*/
+    justify-content: space-between;
+  }
 
-  
-  .item{
+  .labels{
+    width: 100%;
+    flex-grow: 2;
+  }
+
+  .items{
+    width: 100%;
+    flex-grow: 2;
+  }
+
+  @media (min-width: 600px){
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 $gutter;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 1200px){
 
   }
+
 }
