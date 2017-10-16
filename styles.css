@@ -77,6 +77,12 @@ main {
     padding: 12rem 0 12rem 0;
     color: white;
     word-break: break-all; }
+  .header .heading--two {
+    background: green; }
+  .header .heading--one {
+    background: green; }
+  .header .container .button {
+    background: green; }
 
 .heading {
   font-family: 'Roboto Slab', serif; }
@@ -282,7 +288,8 @@ main {
     background-color: transparent;
     padding-left: 20px; }
   .bar--two {
-    padding-right: 20px; }
+    padding-right: 20px;
+    background-color: transparent; }
   .bar--three {
     display: none; }
   @media (min-width: 500px) {
@@ -290,7 +297,6 @@ main {
       display: initial;
       background-color: #666;
       border-radius: 4px;
-      margin: 0 20px;
       padding: 0 20px;
       max-height: 30px;
       align-self: center; } }

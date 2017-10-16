@@ -35,6 +35,7 @@
 
   &--two {
     padding-right: $gutter;
+    background-color: transparent;
   }
 
   &--three {
@@ -46,7 +47,6 @@
       display: initial;
       background-color: #666;
       border-radius: 4px;
-      margin: 0 $gutter;
       padding: 0 $gutter;
       max-height: $gutter*1.5;
       align-self: center;
