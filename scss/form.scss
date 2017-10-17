@@ -1,38 +1,47 @@
 @import "scss/variables";
-.form{
+
+.form {
   background-color: pink;
   max-width: $max-width;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-&__content{
+  &--one {
+    margin: 0 $gutter;
+  }
+
+  &--two {
+    margin: 0 $gutter;
+  }
+
+&__content {
   max-width: 100%;
   height: inherit;
   display: flex;
   flex-direction: column;
 }
 
-  .boxes{
+  .boxes {
     border-radius: 2px 2px 2px 2px;
     -webkit-appearance: none;
   }
 
-  .date{
+  .date {
     display: flex;
     justify-content: space-between;
-    .labels{
+    .labels {
       width: 100%;
       flex-grow: 2;
       text-align: center;
     }
 
-    .genders{
+    .genders {
       display: flex;
       flex-direction: column;
     }
 
-    .boxes{
+    .boxes {
       border-radius: 2px 2px 2px 2px;
       -webkit-appearance: none;
       width: 100%;
@@ -41,11 +50,11 @@
     }
   }
 
-  @media (max-width: 599px){
+  @media (max-width: 599px) {
 
   }
 
-  @media (min-width: 399px){
+  @media (min-width: 399px) {
 
     /*
     &--one{
