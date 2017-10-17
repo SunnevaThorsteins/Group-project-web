@@ -10,3 +10,9 @@
 // breytur fyrir mikið notaðar stærðir
 $max-width: 1200px;
 $gutter: 20px;
+
+//animation
+@keyframes appear {
+  0% { opacity: 1;}
+  100% { opacity: 0; }
+}

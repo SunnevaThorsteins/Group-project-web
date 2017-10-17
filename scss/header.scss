@@ -33,18 +33,4 @@
     color: white;
     word-break: break-all;
   }
-
-//búin að finna hvaða gæja þarf að nota í animationið :)
-  .heading {
-    &--two {
-      background: green;
-    }
-    &--one {
-      background: green;
-    }
-  }
-  .container .button {
-    background: green;
-
-  }
 }
