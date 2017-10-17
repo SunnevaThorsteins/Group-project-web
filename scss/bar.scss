@@ -47,9 +47,10 @@
       display: initial;
       background-color: #666;
       border-radius: 4px;
-      padding: 0 $gutter;
+      padding: 3px $gutter;
       max-height: $gutter*1.5;
       align-self: center;
+      margin: auto;
     }
   }
 }
