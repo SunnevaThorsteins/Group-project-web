@@ -53,7 +53,7 @@ main {
     .col-smm-4 {
       width: 33.33333%; } }
   .col-fluid {
-    width: 33.33333%; }
+    width: 50%; }
     @media (max-width: 599px) {
       .col-fluid {
         width: 50%; } }
@@ -211,17 +211,19 @@ main {
   display: flex;
   max-width: 1200px;
   flex-direction: column;
-  justify-content: space-between;
   background-color: "pink"; }
-  .form--one {
-    margin: 0 20px; }
-  .form--two {
-    margin: 0 20px; }
-  .form__content {
+  .form__container {
     display: flex;
+    margin: auto; }
+  .form--one {
+    background: pink;
+    margin: 0 auto; }
+  .form--two {
+    background: pink;
+    margin: auto; }
+  .form__content {
     max-width: 100%;
-    height: inherit;
-    flex-direction: column; }
+    height: inherit; }
   .form .boxes {
     border-radius: 2px;
     -webkit-appearance: none; }

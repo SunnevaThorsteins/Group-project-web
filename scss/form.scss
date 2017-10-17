@@ -4,22 +4,27 @@
   display: flex;
   max-width: $max-width;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: "pink"; //EYÐUM ÞESSU
+  background-color: "pink";
+
+  &__container {
+    display: flex;
+    margin: auto;
+  }
 
   &--one {
-    margin: 0 $gutter;
+    background: pink;
+    margin: 0 auto;
   }
 
   &--two {
-    margin: 0 $gutter;
+    background: pink;
+    margin: auto;
   }
 
   &__content {
-    display: flex;
     max-width: 100%;
     height: inherit;
-    flex-direction: column;
+
   }
 
   .boxes {
