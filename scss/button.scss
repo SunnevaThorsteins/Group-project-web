@@ -9,6 +9,8 @@
     font-size: 1rem;
     color: #eee;
     text-decoration: none;
+    border-radius: 4px;
+    background-color: #666;
     cursor: pointer;
     background-color: #666;
     border-radius: 4px;
@@ -21,7 +23,11 @@
       padding: 10px $gutter*4.5;
     }
 
+<<<<<<< HEAD
+    &--three { //uppi á index síðu
+=======
     &--three {
+>>>>>>> 9fce5c903805266f07430a1d5d864560dbbcf046
       margin-top: $gutter;
       padding: 10px $gutter*3;
     }
