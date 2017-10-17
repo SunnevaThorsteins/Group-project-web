@@ -4,28 +4,25 @@
   text-align: center;
 
   .button {
-    margin: 0;
-    border: none;
-    border-radius: 4px;
     width: auto;
-
-    color: #eee;
-    background-color: #666;
-
+    margin: 0;
     font-size: 1rem;
+    color: #eee;
     text-decoration: none;
     cursor: pointer;
+    background-color: #666;
+    border-radius: 4px;
 
-      &--one { //niðri á form síðu
-        padding: 10px $gutter*4.5;
-      }
+    &--one { //niðri á form síðu
+      padding: 10px $gutter*4.5;
+    }
 
-      &--two { //niðri á index síðu
-        padding: 10px $gutter*4.5;
-      }
+    &--two { //niðri á index síðu
+      padding: 10px $gutter*4.5;
+    }
 
-      &--three { //uppi á index síðu
-        padding: 10px $gutter*3;
-      }
+    &--three { //uppi á index síðu
+      padding: 10px $gutter*3;
+    }
   }
 }
