@@ -1,22 +1,24 @@
 @import "scss/variables";
 
-.prufa {
-  display: flex;
-
-  &--one {
-
-    float: left;
-  }
-
+.container {
   &--two {
-    float: right;
+    display: inline-flex;
+    flex-direction: row;
   }
-
 }
 
 .bar  {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: $gutter*3;
+
 
   &--content a {
     text-decoration: none;
@@ -24,14 +26,30 @@
   }
 
   &--one {
-    //align-self: flex-start;
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: transparent;
+    padding-left: $gutter;
   }
 
   &--two {
-    //align-self: flex-end;
+    padding-right: $gutter;
+    background-color: transparent;
   }
 
   &--three {
-    //align-self: flex-end;
+    display: none;
+  }
+
+  @media (min-width: 500px) {
+    &--three {
+      display: initial;
+      background-color: #666;
+      border-radius: 4px;
+      padding: 0 $gutter;
+      max-height: $gutter*1.5;
+      align-self: center;
+    }
   }
 }

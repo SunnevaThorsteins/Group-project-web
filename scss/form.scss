@@ -4,6 +4,14 @@
   max-width: $max-width;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
+&__content{
+  max-width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
 
   .boxes{
     border-radius: 2px 2px 2px 2px;
@@ -19,6 +27,11 @@
       text-align: center;
     }
 
+    .genders{
+      display: flex;
+      flex-direction: column;
+    }
+
     .boxes{
       border-radius: 2px 2px 2px 2px;
       -webkit-appearance: none;
@@ -28,11 +41,11 @@
     }
   }
 
-  @media (min-width: 400px){
+  @media (max-width: 599px){
+
   }
 
-  @media (min-width: 600px){
-    justify-content: space-between;
+  @media (min-width: 399px){
 
     /*
     &--one{
@@ -43,4 +56,5 @@
       margin: 0 auto;
     }
   }*/
+}
 }
