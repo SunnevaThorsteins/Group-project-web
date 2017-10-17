@@ -1,3 +1,7 @@
+<<<<<<< HEAD:.stylelintrc
+=======
+
+>>>>>>> 54308e8903fa3fa9dc812d081ce674d643d33bba:.stylelintrc
 {
   "extends": "stylelint-config-primer",
   "rules": {
