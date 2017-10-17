@@ -52,6 +52,14 @@ main {
       width: 50%; }
     .col-smm-4 {
       width: 33.33333%; } }
+  .col-fluid {
+    width: 33.33333%; }
+    @media (max-width: 599px) {
+      .col-fluid {
+        width: 50%; } }
+    @media (max-width: 399px) {
+      .col-fluid {
+        width: 100%; } }
 
 .header {
   width: 100%;
@@ -202,7 +210,12 @@ main {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap; }
+  justify-content: space-between; }
+  .form__content {
+    max-width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column; }
   .form .boxes {
     border-radius: 2px 2px 2px 2px;
     -webkit-appearance: none; }
@@ -213,23 +226,17 @@ main {
       width: 100%;
       flex-grow: 2;
       text-align: center; }
+    .form .date .genders {
+      display: flex;
+      flex-direction: column; }
     .form .date .boxes {
       border-radius: 2px 2px 2px 2px;
       -webkit-appearance: none;
       width: 100%;
       flex-grow: 2;
       text-align: center; }
-  @media (min-width: 400px) {
+  @media (min-width: 399px) {
     .form {
-      /*  &--two {
-      margin: 0 0 0 0;
-    }*/ }
-      .form--one {
-        margin: 0 80px 0 0;
-        /*upp, hægri, niður, vinstri*/ } }
-  @media (min-width: 600px) {
-    .form {
-      margin: auto;
       /*
     &--one{
       margin: 0 $gutter*2 0 0; upp, hægri, niður, vinstri

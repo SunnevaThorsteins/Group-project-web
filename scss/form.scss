@@ -4,7 +4,14 @@
   max-width: $max-width;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: space-between;
+
+&__content{
+  max-width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
 
   .boxes{
     border-radius: 2px 2px 2px 2px;
@@ -20,6 +27,11 @@
       text-align: center;
     }
 
+    .genders{
+      display: flex;
+      flex-direction: column;
+    }
+
     .boxes{
       border-radius: 2px 2px 2px 2px;
       -webkit-appearance: none;
@@ -29,18 +41,11 @@
     }
   }
 
-  @media (min-width: 400px){
-    &--one{
-      margin: 0 $gutter*4 0 0; /*upp, hægri, niður, vinstri*/
-    }
+  @media (max-width: 599px){
 
-  /*  &--two {
-      margin: 0 0 0 0;
-    }*/
   }
 
-  @media (min-width: 600px){
-    margin: auto;
+  @media (min-width: 399px){
 
     /*
     &--one{
