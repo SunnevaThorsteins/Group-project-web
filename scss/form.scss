@@ -1,5 +1,6 @@
 @import "scss/variables";
 .form{
+  background-color: pink;
   max-width: $max-width;
   display: flex;
   flex-direction: column;
@@ -13,29 +14,42 @@
   .date{
     display: flex;
     justify-content: space-between;
+    .labels{
+      width: 100%;
+      flex-grow: 2;
+      text-align: center;
+    }
+
+    .boxes{
+      border-radius: 2px 2px 2px 2px;
+      -webkit-appearance: none;
+      width: 100%;
+      flex-grow: 2;
+      text-align: center;
+    }
   }
 
-  .labels{
-    width: 100%;
-    flex-grow: 2;
-  }
+  @media (min-width: 400px){
+    &--one{
+      margin: 0 $gutter*4 0 0; /*upp, hægri, niður, vinstri*/
+    }
 
-  .items{
-    border-radius: 2px 2px 2px 2px;
-    -webkit-appearance: none;
-    width: 100%;
-    flex-grow: 2;
+  /*  &--two {
+      margin: 0 0 0 0;
+    }*/
   }
 
   @media (min-width: 600px){
-    display: inline-flex;
-    flex-direction: column;
-    margin: 0 $gutter;
-    justify-content: space-around;
-  }
+    margin: auto;
 
-  @media (min-width: 1200px){
+    /*
+    &--one{
+      margin: 0 $gutter*2 0 0; upp, hægri, niður, vinstri
+    }
 
-  }
-
+    &--two {
+      margin: 0 auto;
+    }
+  }*/
+}
 }

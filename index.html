@@ -10,22 +10,24 @@
   </head>
   <body>
     <header class="header header--one">
-      <div class = "bar">
-        <form  class="button" action="index.html">
-          <input class="button button--one" type="submit" value="Fooþjónustan">
-        </form>
-        <form class="button" action="um.html">
-          <input class="button button--two" type="submit" value="Um">
-        </form>
-        <form class="button" action="form.html">
-          <input class="button button--three" type="submit" value="Kaupa">
-        </form>
-      </div>
+      <nav>
+        <div class = "bar">
+          <ul class="bar bar--content">
+            <div class= "container--one">
+              <li class="bar bar--one"><a href="index.html">Fooþjónustan</a></li>
+            </div>
+            <div class= "container--two">
+              <li class="bar bar--two"><a href="um.html">Um</a></li>
+              <li class="bar bar--three"><a href="form.html">Kaupa</a></li>
+            </div>
+          </ul>
+        </div>
+      </nav>
       <div class="content">
         <h2 class="heading heading--two">Í fyrsta skipti á Íslandi</h2>
         <h1 class="heading heading--one">Fooþjónustan</h2>
         <div>
-          <form  class = "container" action="form.html">
+          <form  class="container" action="form.html">
             <input class="button button--three" type="submit" value="Kaupa">
           </form>
         </div>
@@ -79,21 +81,24 @@
 
           <div class="col col-4 col-sm-6 col-smm-12">
             <div class="card">
-              <div class="card__content">
-                <img src="img/profile1.jpg" class="card__img" alt="">
+              <img src="img/profile1.jpg" class="card__img" alt="">
+                <div class="card__content">
                 <blockquote class="card__blockquote">
                   „Ég get engan vegið hugsað mér lífið án þessarar þjónustu!“
                 </blockquote>
-                <p class="card__name">Anna Jóns</p>
-                <p class="card__text">Áskrifandi í þrjá mánuði</p>
+                <div class="card__p">
+                  <p class="card__name">Anna Jóns</p>
+                  <p class="card__text">Áskrifandi í þrjá mánuði</p>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col col-4 col-sm-6 col-smm-12">
             <div class="card">
+              <img src="img/profile2.jpg" class="card__img" alt="">
               <div class="card__content">
-                <img src="img/profile2.jpg" class="card__img" alt="">
+
                 <blockquote class="card__blockquote">
                   „Vá, þetta breytir öllu!“
                 </blockquote>
@@ -121,9 +126,6 @@
 
       <section>
         <h3 class="heading heading--three">Eftir hverju ert þú að bíða?</h3>
-        <form class="button button--one" action="form.html">
-          <input type="submit" value="Kaupa">
-        </form>
         <div>
           <form  class = "container" action="form.html">
             <input class="button button--two" type="submit" value="Kaupa">

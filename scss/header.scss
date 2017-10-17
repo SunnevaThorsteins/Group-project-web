@@ -17,6 +17,7 @@
     margin: auto;
     text-align: center;
     margin: 0 auto $gutter * 2;
+    word-break: break-all;
   }
 
   &--two {
@@ -31,5 +32,19 @@
     padding: 12rem 0 12rem 0;
     color: white;
     word-break: break-all;
+  }
+
+//búin að finna hvaða gæja þarf að nota í animationið :)
+  .heading {
+    &--two {
+      background: green;
+    }
+    &--one {
+      background: green;
+    }
+  }
+  .container .button {
+    background: green;
+
   }
 }
