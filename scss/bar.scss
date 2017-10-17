@@ -7,30 +7,29 @@
   }
 }
 
-.bar  {
-  background-color: rgba(0, 0, 0, 0.5);
-  list-style: none;
+.bar {
   display: inline-flex;
+  width: 100%;
+  height: $gutter*3;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  height: $gutter*3;
-
 
   &--content a {
+    color: #fff;
     text-decoration: none;
-    color: white;
   }
 
   &--one {
+    padding-left: $gutter;
+    font-family: "Roboto Slab", serif;
     font-size: 1.5em;
-    font-family: 'Roboto Slab', serif;
     font-weight: bold;
     background-color: transparent;
-    padding-left: $gutter;
   }
 
   &--two {
@@ -44,13 +43,13 @@
 
   @media (min-width: 500px) {
     &--three {
-      display: initial;
+      max-height: $gutter*1.5;
+      padding: 3px $gutter;
+      margin: auto;
       background-color: #666;
       border-radius: 4px;
-      padding: 3px $gutter;
-      max-height: $gutter*1.5;
       align-self: center;
-      margin: auto;
+
     }
   }
 }
