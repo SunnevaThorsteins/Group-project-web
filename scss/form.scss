@@ -1,51 +1,61 @@
 @import "scss/variables";
-.form{
-  background-color: pink;
-  max-width: $max-width;
+
+.form {
   display: flex;
+  max-width: $max-width;
   flex-direction: column;
   justify-content: space-between;
+  background-color: "pink"; //EYÐUM ÞESSU
 
-&__content{
-  max-width: 100%;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-}
+  &--one {
+    margin: 0 $gutter;
+  }
 
-  .boxes{
-    border-radius: 2px 2px 2px 2px;
+  &--two {
+    margin: 0 $gutter;
+  }
+
+  &__content {
+    display: flex;
+    max-width: 100%;
+    height: inherit;
+    flex-direction: column;
+  }
+
+  .boxes {
+    border-radius: 2px;
     -webkit-appearance: none;
   }
 
-  .date{
+  .date {
     display: flex;
     justify-content: space-between;
-    .labels{
+
+    .labels {
       width: 100%;
       flex-grow: 2;
       text-align: center;
     }
 
-    .genders{
+    .genders {
       display: flex;
       flex-direction: column;
     }
 
-    .boxes{
-      border-radius: 2px 2px 2px 2px;
-      -webkit-appearance: none;
+    .boxes {
       width: 100%;
-      flex-grow: 2;
       text-align: center;
+      border-radius: 2px;
+      -webkit-appearance: none;
+      flex-grow: 2;
     }
   }
 
-  @media (max-width: 599px){
+  @media (max-width: 599px) {
 
   }
 
-  @media (min-width: 399px){
+  @media (min-width: 399px) {
 
     /*
     &--one{

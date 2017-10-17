@@ -1,20 +1,27 @@
 @import "scss/variables";
 
 .heading {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 
   &--one {
     font-size: 4em;
   }
 
   &--two {
-    font-size: 1.5rem;
+    margin-top: $gutter * 4;
     margin-bottom: $gutter;
-    margin-top: 4*$gutter;
+    font-size: 1.5rem;
   }
 
   &--three {
     font-size: 1em;
     text-align: center;
+  }
+
+  &--trans {
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
   }
 }
