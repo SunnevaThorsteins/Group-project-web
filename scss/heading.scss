@@ -17,4 +17,11 @@
     font-size: 1em;
     text-align: center;
   }
+
+  &--trans {
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  }
 }
