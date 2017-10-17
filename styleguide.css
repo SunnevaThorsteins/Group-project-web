@@ -1,4 +1,5 @@
+@import "scss/variables";
 
 section {
-  margin-bottom: 40px;
+  margin: $gutter * 3;
 }

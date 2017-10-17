@@ -145,49 +145,49 @@ main {
     border-radius: 100%;
     margin-bottom: 20px; }
 
-.cardlist__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px; }
+/*.cardlist {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
 
-.cardlist__col {
-  width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-  display: flex;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin: 0 0 20px; }
-  @media (min-width: 600px) {
-    .cardlist__col {
-      width: 33.33333%;
-      padding-right: 10px;
-      padding-left: 10px;
+  &__col {
+    @include columns(12);
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0 0 20px;
+
+    @media (min-width: 600px) {
+      @include columns(4);
       margin-left: 0;
-      margin-right: 0; } }
-
+      margin-right: 0;
+    }
+  }
+}*/
 .item {
   display: flex;
   flex-direction: row;
   width: 100%;
   padding: 0;
   overflow: hidden;
-  margin: 80px 0; }
+  margin: 70px 0; }
   .item__content {
     display: flex;
     flex-direction: column;
-    width: 100%; }
+    width: 100%;
+    margin-left: 10px; }
   .item__heading {
     font-family: 'Roboto Slab', serif;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 5px; }
+    font-size: 21px;
+    font-weight: bold; }
   .item__text {
-    font-size: 1em; }
+    font-size: 18px; }
   .item__img {
-    height: 25px;
-    width: 25px; }
+    height: 30px;
+    width: 30px; }
 
 .form {
   max-width: 1200px;

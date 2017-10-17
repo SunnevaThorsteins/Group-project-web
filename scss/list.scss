@@ -4,28 +4,28 @@
   width: 100%;
   padding: 0;
   overflow: hidden;
-  margin: $gutter * 4 0;
+  margin: $gutter * 3.5 0;
 
   &__content {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-left: $gutter / 2;
   }
 
   &__heading {
     font-family: 'Roboto Slab', serif;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
-    margin-left: 5px;
   }
 
   &__text {
-    font-size: 1em;
+    font-size: 18px;
   }
 
   &__img {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
 
   }
 }
