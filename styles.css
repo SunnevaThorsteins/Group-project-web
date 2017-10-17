@@ -174,19 +174,25 @@ main {
   border: "none";
   width: auto;
   border-radius: 4px;
-
   color: #eee;
   background-color: #666;
   font-size: 1rem;
   text-decoration: none;
-  cursor: pointer; }
-  .container .button--one {
-    padding: 10px 90px; }
-  .container .button--two {
-    padding: 10px 90px; }
-  .container .button--three {
-    margin-top: 20px;
-    padding: 10px 60px; }
+  cursor: pointer;
+}
+
+.container .button--one {
+  padding: 10px 90px;
+}
+
+.container .button--two {
+  padding: 10px 90px;
+}
+
+.container .button--three {
+  margin-top: 20px;
+  padding: 10px 60px;
+}
 
 .card {
   width: 100%;

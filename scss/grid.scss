@@ -61,7 +61,7 @@
   }
 
   &-fluid {
-    @include columns(4);
+    @include columns(6);
 
     @media (max-width: 599px) {
       @include columns(6);
