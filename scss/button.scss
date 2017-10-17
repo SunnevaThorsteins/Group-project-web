@@ -25,6 +25,7 @@
       }
 
       &--three { //uppi á index síðu
+        margin-top: $gutter;
         padding: 10px $gutter*3;
       }
   }
