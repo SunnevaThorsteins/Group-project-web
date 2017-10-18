@@ -62,4 +62,8 @@
         align-self: center;
       }
   }
+
+  @media (min-width: 400px) {
+    align-items: flex-start;
+  }
 }
