@@ -24,6 +24,10 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
     margin-bottom: $gutter;
   }
 
@@ -32,14 +36,21 @@
     -webkit-appearance: none;
   }
 
-  .dates {
+
+  &__dates {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .labels {
       width: 100%;
       flex-grow: 2;
       text-align: center;
+
+      &--two {
+        align-self: flex-start;
+      }
+
     }
 
     .genders {
@@ -47,12 +58,12 @@
       flex-direction: column;
     }
 
-    .boxes {
+    .box {
       width: 100%;
       text-align: center;
+      flex-grow: 2;
       border-radius: 2px;
       -webkit-appearance: none;
-      flex-grow: 2;
     }
   }
 }

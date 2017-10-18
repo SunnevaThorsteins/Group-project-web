@@ -75,33 +75,29 @@ main {
 .header {
   width: 100%;
   max-width: 1200px;
-  min-height: 95vh;
   margin: 0 auto;
   opacity: 0.9; }
   .header--one {
     margin-top: 0;
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
-    background-size: cover; }
+    background-size: cover;
+    margin-bottom: 120px;
+    min-height: 100vh; }
   .header--one .content {
-    margin: 0 auto 40px;
+    margin-top: 200px;
     text-align: center;
     word-break: break-all; }
   .header--two {
     background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
-    background-position: 0 0;
-    background-size: cover; }
+    background-position: center;
+    background-size: contain;
+    max-height: 70vh; }
   .header--two .content {
     padding: 12rem 0;
-    margin: auto;
+    margin: auto 0;
     color: #fff;
     text-align: left;
     word-break: break-all; }
-  .header .heading--two {
-    background: "green"; }
-  .header .heading--one {
-    background: "green"; }
-  .header .container .button {
-    background: "green"; }
 
 @keyframes fade-in {
   from {
@@ -152,6 +148,7 @@ main {
 .container {
   text-align: center; }
   .container .button {
+    border: none;
     width: auto;
     margin: 0;
     font-size: 1rem;
@@ -159,14 +156,19 @@ main {
     text-decoration: none;
     cursor: pointer;
     background-color: #666;
-    border-radius: 4px; }
+    border-radius: 4px;
+    transition: background-color 500ms ease, color 500ms ease; }
     .container .button--one {
-      padding: 10px 90px; }
-    .container .button--two {
-      padding: 10px 90px; }
-    .container .button--three {
-      padding: 10px 60px;
+      padding: 10px 110px;
       margin-top: 20px; }
+    .container .button--two {
+      margin-top: 20px;
+      padding: 10px 60px; }
+    .container .button--three {
+      margin-top: 60px;
+      padding: 10px 40px; }
+  .container .button:hover {
+    background-color: #383838; }
 
 @keyframes fade-in {
   from {
@@ -267,26 +269,33 @@ main {
       margin-right: 8.33333%;
       margin-left: 8.33333%; } }
   .form__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
     margin-bottom: 20px; }
   .form .boxes {
     border-radius: 2px;
     -webkit-appearance: none; }
-  .form .dates {
+  .form__dates {
+    width: 100%;
     display: flex;
-    justify-content: space-between; }
-    .form .dates .labels {
+    justify-content: space-around; }
+    .form__dates .labels {
       width: 100%;
       flex-grow: 2;
       text-align: center; }
-    .form .dates .genders {
+      .form__dates .labels--two {
+        align-self: flex-start; }
+    .form__dates .genders {
       display: flex;
       flex-direction: column; }
-    .form .dates .boxes {
+    .form__dates .box {
       width: 100%;
       text-align: center;
+      flex-grow: 2;
       border-radius: 2px;
-      -webkit-appearance: none;
-      flex-grow: 2; }
+      -webkit-appearance: none; }
 
 @keyframes fade-in {
   from {
