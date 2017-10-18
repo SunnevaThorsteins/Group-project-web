@@ -30,138 +30,131 @@
 </header>
 <body>
   <main>
-    <div class="row">
-      <div class="col col-4 col-sm-6 col-smm-12">
-        <form class="form form--one">
+    <div class="form__row">
+      <div class="form__col">
+        <form>
           <legend class="heading heading--two">Persónuupplýsingar</legend>
-          <div class="form__content">
-            <div class="form__item">
-              <div>
-                <label for="name">Nafn:</label>
-              </div>
-              <div>
-                <input class="boxes" type="text" required>
-              </div>
-            </div>
-            <div class="form__item">
-              <div>
-                <label for="idn">Kennitala:</label>
-              </div>
-              <div>
-                <input class="boxes" type="text" required placeholder="123456-7890">
-              </div>
-            </div>
-            <div class="form__item">
-              <div>
-                <div>
-                  <label for="radio">Kyn:</label>
-                </div>
-                <div class="genders">
-                  <div>
-                    <label>
-                      <input type="radio" name="gender" value="kona"> Kona
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="radio" name="gender" value="karl"> Karl
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="radio" name="gender" value="annað"> Annað
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form__item">
-              <div>
-                <label for="tel">Sími:</label>
-              </div>
-              <div>
-                <input class="boxes" type="tel" required placeholder="+354 812 3456">
-              </div>
-            </div>
-            <div class="form__item">
-              <div>
-                <label for="text">Heimilisfang:</label>
-              </div>
-              <div>
-                <input class="boxes" type="text" required>
-              </div>
-            </div>
-            <div class="form__item">
-              <div>
-                <input type="checkbox" checked> Skrá mig á póstlista </input>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <div class="col col-4 col-sm-6 col-smm-12">
-      <div class="form__container">
-
-        <form class="form form--two">
-          <legend class="heading heading--two">Greiðsluupplýsingar</legend>
-          <div class="form__content">
-            <div class="form__item">
-              <div>
-                <label for="payment">Greiða með:</label>
-              </div>
-              <select name="payment" id="payment">
-                <option value="kreditkort">Kreditkorti</option>
-                <option value="millifærsla">Millifærslu</option>
-                <option value="reiðufé">Reiðufé</option>
-              </select>
-            </div>
-            <div class="form__item">
-              <div>
-                <label for="cardname">Nafn á korti:</label>
-              </div>
-              <div>
-                <input class="boxes" type="text" required>
-              </div>
-            </div>
-            <div class="form__item">
-              <div>
-                <label for="cardnumber">Kortanúmer:</label>
-              </div>
-              <div>
-                <input class="boxes" type="text" required placeholder="5999-9999-9999-9999">
-              </div>
+          <div class="form__item">
+            <div>
+              <label for="name">Nafn:</label>
             </div>
             <div>
-            <label for="expire">Gildistími:</label>
-              <div class="dates">
-                <label for="select" class="labels">Mán</label>
-                <select class="boxes">
-                  <option value="1">01</option>
-                  <option value="2">02</option>
-                  <option value="3">03</option>
-                  <option value="4">04</option>
-                  <option value="5">05</option>
-                  <option value="6">06</option>
-                  <option value="7">07</option>
-                  <option value="8">08</option>
-                  <option value="9">09</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                </select>
-                <label class="labels" for="select">Ár</label>
-                <select>
-                  <option value="2017">2017</option>
-                  <option value="2018">2018</option>
-                  <option value="2019">2019</option>
-                  <option value="2020">2020</option>
-                </select>
+              <input class="boxes" type="text" required>
+            </div>
+          </div>
+          <div class="form__item">
+            <div>
+              <label for="idn">Kennitala:</label>
+            </div>
+            <div>
+              <input class="boxes" type="text" required placeholder="123456-7890">
+            </div>
+          </div>
+          <div class="form__item">
+            <div>
+              <div>
+                <label for="radio">Kyn:</label>
               </div>
+              <div class="genders">
+                <div>
+                  <label>
+                    <input type="radio" name="gender" value="kona"> Kona
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input type="radio" name="gender" value="karl"> Karl
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input type="radio" name="gender" value="annað"> Annað
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form__item">
+            <div>
+              <label for="tel">Sími:</label>
+            </div>
+            <div>
+              <input class="boxes" type="tel" required placeholder="+354 812 3456">
+            </div>
+          </div>
+          <div class="form__item">
+            <div>
+              <label for="text">Heimilisfang:</label>
+            </div>
+            <div>
+              <input class="boxes" type="text" required>
+            </div>
+          </div>
+          <div class="form__item">
+            <div>
+              <input type="checkbox" checked> Skrá mig á póstlista </input>
             </div>
           </div>
         </form>
       </div>
+
+      <div class="form__col">
+        <form>
+          <legend class="heading heading--two">Greiðsluupplýsingar</legend>
+          <div class="form__item">
+            <div>
+              <label for="payment">Greiða með:</label>
+            </div>
+            <select name="payment" id="payment">
+              <option value="kreditkort">Kreditkorti</option>
+              <option value="millifærsla">Millifærslu</option>
+              <option value="reiðufé">Reiðufé</option>
+            </select>
+          </div>
+          <div class="form__item">
+            <div>
+              <label for="cardname">Nafn á korti:</label>
+            </div>
+            <div>
+              <input class="boxes" type="text" required>
+            </div>
+          </div>
+          <div class="form__item">
+            <div>
+              <label for="cardnumber">Kortanúmer:</label>
+            </div>
+            <div>
+              <input class="boxes" type="text" required placeholder="5999-9999-9999-9999">
+            </div>
+          </div>
+          <div>
+          <label for="expire">Gildistími:</label>
+            <div class="dates">
+              <label for="select" class="labels">Mán</label>
+              <select class="boxes">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <label class="labels" for="select">Ár</label>
+              <select>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+              </select>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </main>
