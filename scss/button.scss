@@ -4,16 +4,15 @@
   text-align: center;
 
   .button {
-    border: none;
     width: auto;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1em;
     color: #eee;
     text-decoration: none;
     cursor: pointer;
     background-color: #666;
+    border: 0;
     border-radius: 4px;
-
     transition: background-color 500ms ease, color 500ms ease;
 
     &--one { //niðri á form síðu
@@ -22,15 +21,16 @@
     }
 
     &--two { //niðri á index síðu
-      margin-top: $gutter;
       padding: 10px $gutter * 3;
+      margin-top: $gutter;
     }
 
     &--three {
-      margin-top: $gutter * 3;
       padding: 10px $gutter * 2;
+      margin-top: $gutter * 3;
     }
   }
+
   .button:hover {
     background-color: #383838;
   }
