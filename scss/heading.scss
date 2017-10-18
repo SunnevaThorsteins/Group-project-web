@@ -5,12 +5,16 @@
 
   &--one {
     font-size: 4em;
+
   }
 
   &--two {
-    margin-top: $gutter * 4;
-    margin-bottom: $gutter;
     font-size: 1.5rem;
+
+    &--bil {
+      margin-top: $gutter * 4;
+      margin-bottom: $gutter;
+    }
   }
 
   &--three {

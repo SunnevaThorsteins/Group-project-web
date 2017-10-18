@@ -103,9 +103,10 @@ main {
   .heading--one {
     font-size: 4em; }
   .heading--two {
-    margin-top: 80px;
-    margin-bottom: 20px;
     font-size: 1.5rem; }
+    .heading--two--bil {
+      margin-top: 80px;
+      margin-bottom: 20px; }
   .heading--three {
     font-size: 1em;
     text-align: center; }
@@ -212,25 +213,25 @@ main {
   to {
     opacity: 1; } }
 
-.item {
+.list .item {
   display: flex;
   width: 100%;
   padding: 0;
-  margin: 70px 0;
+  margin: 60px 0;
   overflow: hidden;
   flex-direction: row; }
-  .item__content {
+  .list .item__content {
     display: flex;
     width: 100%;
     margin-left: 10px;
     flex-direction: column; }
-  .item__heading {
+  .list .item__heading {
     font-family: "Roboto Slab", serif;
     font-size: 21px;
     font-weight: bold; }
-  .item__text {
+  .list .item__text {
     font-size: 18px; }
-  .item__img {
+  .list .item__img {
     width: 30px;
     height: 30px; }
 
@@ -249,7 +250,9 @@ main {
 .form {
   display: flex;
   max-width: 1200px;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 20px; }
   .form__row {
     display: flex;
     flex-wrap: wrap;

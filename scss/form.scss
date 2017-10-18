@@ -4,6 +4,8 @@
   display: flex;
   max-width: $max-width;
   flex-direction: column;
+  margin-top: $gutter * 4;
+  margin-bottom: $gutter;
 
   &__row {
     display: flex;
