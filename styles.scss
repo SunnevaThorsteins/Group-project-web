@@ -3,20 +3,19 @@ $gutter: 20px;
 
 html {
   box-sizing: border-box;
+  margin-right: $gutter;
+  margin-left: $gutter;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
-}
-
-html {
-  margin-right: $gutter;
-  margin-left: $gutter;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 img {
@@ -28,7 +27,6 @@ main {
   margin: 0 auto;
   overflow-x: hidden;
 }
-
 
 @import "scss/grid";
 @import "scss/header";

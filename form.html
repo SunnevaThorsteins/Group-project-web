@@ -10,14 +10,14 @@
   <link rel="stylesheet" href="styleguide.css">
   <link rel="stylesheet" href="grid.css">
 </head>
-<header class = "header header--two">
+<header class="header header--two">
   <nav>
-    <div class = "bar">
+    <div class="bar">
       <ul class="bar bar--content">
-        <div class= "container--one">
+        <div class="container--one">
           <li class="bar bar--one"><a href="index.html">Fooþjónustan</a></li>
         </div>
-        <div class= "container--two">
+        <div class="container--two">
           <li class="bar bar--two"><a href="um.html">Um</a></li>
           <li class="bar bar--three"><a href="form.html">Kaupa</a></li>
         </div>
@@ -31,48 +31,97 @@
 <body>
   <main>
     <div class="row">
-      <div class="col col-fluid">
-        <form class="form form--one">
-          <h2 class="heading heading--two">Persónuupplýsingar</h2>
-          <div class="form__content">
-            <label for="text">Nafn:</label>
-            <input class="boxes" type="text" required>
-            <label for="text">Kennitala:</label>
-            <input class="boxes" type="text" required placeholder="123456-7890">
-            <label for="radio">Kyn:</label>
-            <div class="genders">
-              <input type="radio" name="gender" value="1">Kona
-              <input type="radio" name="gender" value="2">Karl
-              <input type="radio" name="gender" value="3">Annað
-            </div>
-            <label for="tel">Sími:</label>
-            <input class="boxes" type="tel" required placeholder="+354 812 3456">
-            <label for="text">Heimilisfang:</label>
-            <input class="boxes" type="text" required>
-            <div>
-              <input type="checkbox" checked> Skrá mig á póstlista </input>
-            </div>
-          </div>
-        </form>
+      <div class="col col-4 col-sm-6 col-smm-12">
+        <div class="form__container">
+
+                <form class="form form--one">
+                  <legend class="heading heading--two">Persónuupplýsingar</legend>
+                  <div class="form__content">
+                    <div>
+                      <label for="name">Nafn:</label>
+                    </div>
+                    <div>
+                      <input class="boxes" type="text" required>
+                    </div>
+                    <div>
+                      <label for="idn">Kennitala:</label>
+                    </div>
+                    <div>
+                      <input class="boxes" type="text" required placeholder="123456-7890">
+                    </div>
+                    <div>
+                      <div>
+                        <label for="radio">Kyn:</label>
+                      </div>
+                      <div class="genders">
+                        <div>
+                          <label>
+                            <input type="radio" name="gender" value="kona"> Kona
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input type="radio" name="gender" value="karl"> Karl
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input type="radio" name="gender" value="annað"> Annað
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label for="tel">Sími:</label>
+                    </div>
+                    <div>
+                      <input class="boxes" type="tel" required placeholder="+354 812 3456">
+                    </div>
+                    <div>
+                      <label for="text">Heimilisfang:</label>
+                    </div>
+                    <div>
+                      <input class="boxes" type="text" required>
+                    </div>
+                    <div>
+                      <input type="checkbox" checked> Skrá mig á póstlista </input>
+                    </div>
+                  </div>
+                </form>
+        </div>
       </div>
-      <div class="col col-fluid">
+      <div class="col col-4 col-sm-6 col-smm-12">
+      <div class="form__container">
+
         <form class="form form--two">
-          <h2 class="heading heading--two">Greiðsluupplýsingar</h2>
+          <legend class="heading heading--two">Greiðsluupplýsingar</legend>
           <div class="form__content">
-            <label for="select">Greiða með:</label>
-            <select class="boxes">
-              <option value="Kreditkort">Kreditkorti</option>
-              <option value="Millifærsla">Millifærslu</option>
-              <option value="Reiðufé">Reiðufé</option>
-            </select><br>
-            <label for="text">Nafn á korti:</label>
-            <input class="boxes" type="text" required>
-            <label for="text">Kortanúmer:</label>
-            <input class="boxes" type="text" required placeholder="5999-9999-9999-9999">
-            <p>Gildistími:</p>
-            <div class="date">
-              <label class="labels" for="select">Mán</label>
-              <select class="boxes">
+            <div>
+              <div>
+                <label for="payment">Greiða með:</label>
+              </div>
+              <select name="payment" id="payment">
+                <option value="kreditkort">Kreditkorti</option>
+                <option value="millifærsla">Millifærslu</option>
+                <option value="reiðufé">Reiðufé</option>
+              </select>
+            </div>
+            <div>
+              <label for="cardname">Nafn á korti:</label>
+            </div>
+            <div>
+              <input class="boxes" type="text" required>
+            </div>
+            <div>
+              <label for="cardnumber">Kortanúmer:</label>
+            </div>
+            <div>
+              <input class="boxes" type="text" required placeholder="5999-9999-9999-9999">
+            </div>
+            <label for="expire">Gildistími:</label>
+            <div class="dates">
+              <label for="select">Mán</label>
+              <select>
                 <option value="1">01</option>
                 <option value="2">02</option>
                 <option value="3">03</option>
@@ -87,7 +136,7 @@
                 <option value="12">12</option>
               </select>
               <label class="labels" for="select">Ár</label>
-              <select class="boxes">
+              <select>
                 <option value="2017">2017</option>
                 <option value="2018">2018</option>
                 <option value="2019">2019</option>
@@ -97,9 +146,10 @@
           </div>
         </form>
       </div>
+      </div>
     </div>
   </main>
-  <div class = "container">
+  <div class="container">
     <button class="button button--one">Panta</button>
   </div>
 </body>

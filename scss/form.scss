@@ -1,60 +1,65 @@
 @import "scss/variables";
-.form{
-  background-color: pink;
+
+.form {
+  display: flex;
   max-width: $max-width;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  background-color: "pink";
 
-&__content{
-  max-width: 100%;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-}
+  &__container {
+    display: flex;
+    margin: auto;
+  }
 
-  .boxes{
-    border-radius: 2px 2px 2px 2px;
+  &--one {
+    background: pink;
+    margin: 0 auto;
+  }
+
+  &--two {
+    background: pink;
+    margin: auto;
+  }
+
+  &__content {
+    max-width: 100%;
+    height: inherit;
+
+  }
+
+  .boxes {
+    border-radius: 2px;
     -webkit-appearance: none;
   }
 
-  .date{
+  .date {
     display: flex;
     justify-content: space-between;
-    .labels{
+
+    .labels {
       width: 100%;
       flex-grow: 2;
       text-align: center;
     }
 
-    .genders{
+    .genders {
       display: flex;
       flex-direction: column;
     }
 
-    .boxes{
-      border-radius: 2px 2px 2px 2px;
-      -webkit-appearance: none;
+    .boxes {
       width: 100%;
-      flex-grow: 2;
       text-align: center;
+      border-radius: 2px;
+      -webkit-appearance: none;
+      flex-grow: 2;
     }
   }
 
-  @media (max-width: 599px){
+  @media (max-width: 599px) {
 
   }
 
-  @media (min-width: 399px){
-
-    /*
-    &--one{
-      margin: 0 $gutter*2 0 0; upp, hægri, niður, vinstri
-    }
-
-    &--two {
-      margin: 0 auto;
-    }
-  }*/
+  @media (min-width: 399px) {
 }
 }

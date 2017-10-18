@@ -60,14 +60,14 @@
     }
   }
 
-  &-fluid{
-    @include columns(4);
+  &-fluid {
+    @include columns(6);
 
-    @media (max-width: 599px){
+    @media (max-width: 599px) {
       @include columns(6);
     }
 
-    @media (max-width: 399px){
+    @media (max-width: 399px) {
       @include columns(12);
     }
   }

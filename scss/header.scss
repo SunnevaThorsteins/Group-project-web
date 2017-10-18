@@ -2,35 +2,49 @@
 
 .header {
   width: 100%;
-  min-height: 95vh;
   max-width: $max-width;
-  opacity: 0.9;
+  min-height: 95vh;
   margin: 0 auto;
+  opacity: 0.9;
 
   &--one {
-    background: transparent url('img/bg.jpg') no-repeat fixed 50% 50%;
-    background-size: cover;
     margin-top: 0;
+    background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
+    background-size: cover;
   }
 
   &--one .content {
-    margin: auto;
-    text-align: center;
     margin: 0 auto $gutter * 2;
+    text-align: center;
     word-break: break-all;
   }
 
   &--two {
-    background: transparent url('img/bg-subpage.jpg') no-repeat fixed 50% 50%;
-    background-size: cover;
+    background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
     background-position: 0 0;
+    background-size: cover;
   }
 
   &--two .content {
+    padding: 12rem 0;
     margin: auto;
+    color: #fff;
     text-align: left;
-    padding: 12rem 0 12rem 0;
-    color: white;
     word-break: break-all;
+  }
+
+//búin að finna hvaða gæja þarf að nota í animationið :)
+  .heading {
+    &--two {
+      background: "green";
+    }
+
+    &--one {
+      background: "green";
+    }
+  }
+
+  .container .button {
+    background: "green";
   }
 }
