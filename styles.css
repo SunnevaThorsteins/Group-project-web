@@ -200,7 +200,8 @@ main {
   .card__img {
     width: 80%;
     border-radius: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+  }
 
   .card__blockquote {
     font-size: 18px;
