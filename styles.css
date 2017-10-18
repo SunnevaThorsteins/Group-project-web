@@ -21,6 +21,12 @@ main {
   margin: 0 auto;
   overflow-x: hidden; }
 
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -60,6 +66,12 @@ main {
       .col-fluid {
         width: 100%; } }
 
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .header {
   width: 100%;
   max-width: 1200px;
@@ -91,6 +103,12 @@ main {
   .header .container .button {
     background: "green"; }
 
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .heading {
   font-family: "Roboto Slab", serif; }
   .heading--one {
@@ -102,16 +120,34 @@ main {
   .heading--three {
     font-size: 1em;
     text-align: center; }
+  .heading--trans--one {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards 1s; }
+  .heading--trans--two {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards 2s; }
+  .heading--trans--three {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards 3s; }
 
-@keyframes fade {
+@keyframes fade-in {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
 
 .text {
+  width: 100%;
+  padding: 0;
+  margin: 70px 0;
   margin-bottom: 20px;
   font-style: normal; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .container {
   text-align: center; }
@@ -132,35 +168,50 @@ main {
       padding: 10px 60px;
       margin-top: 20px; }
 
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .card {
+  background: pink;
   width: 100%;
-  padding: 20px;
-  overflow: hidden; }
-  .card__content {
-    display: flex;
-    padding: 15px; }
-    @media (min-width: 600px) {
-      .card__content {
-        align-items: flex-start; } }
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: auto; }
+  .card__img {
+    width: 80%;
+    border-radius: 100%;
+    margin: 0 auto; }
   .card__blockquote {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
     font-size: 18px;
     font-style: italic;
-    background: "pink"; }
+    font-weight: bold; }
   .card__name {
-    display: flex;
-    align-items: flex-start;
-    font-size: 1em;
-    background: "green"; }
+    font-size: 16px; }
   .card__text {
-    font-size: 12px; }
-  .card__img {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 100%; }
+    font-size: 12px;
+    margin-bottom: 20px; }
+
+@media (min-width: 400px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; } }
+
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto; } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .item {
   display: flex;
@@ -183,6 +234,18 @@ main {
   .item__img {
     width: 30px;
     height: 30px; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .form {
   display: flex;
@@ -224,6 +287,12 @@ main {
       -webkit-appearance: none;
       flex-grow: 2; }
 
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .blockquote {
   max-width: 100%;
   margin-left: 20px; }
@@ -242,6 +311,12 @@ main {
       padding: 40px 0 40px 40px;
       margin: 0 auto; } }
 
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .container--two {
   display: inline-flex;
   flex-direction: row; }
@@ -249,14 +324,15 @@ main {
 .bar {
   display: inline-flex;
   width: 100%;
-  height: 60px;
+  height: 50px;
   padding: 0;
   margin: 0;
   list-style: none;
   flex-direction: row;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  transition: background-color 500ms ease, color 500ms ease; }
   .bar--content a {
     color: #fff;
     text-decoration: none; }
@@ -271,11 +347,15 @@ main {
     background-color: transparent; }
   .bar--three {
     display: none; }
+  .bar--three:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
   @media (min-width: 500px) {
     .bar--three {
+      display: initial;
       max-height: 30px;
       padding: 3px 20px;
       margin: auto;
+      margin-right: 20px;
       background-color: #666;
       border-radius: 4px;
       align-self: center; } }

@@ -10,14 +10,16 @@
 .bar {
   display: inline-flex;
   width: 100%;
-  height: $gutter*3;
+  height: $gutter*2.5;
   padding: 0;
   margin: 0;
   list-style: none;
   flex-direction: row;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: space-between;
   align-items: center;
+
+  transition: background-color 500ms ease, color 500ms ease;
 
   &--content a {
     color: #fff;
@@ -41,11 +43,17 @@
     display: none;
   }
 
+  &--three:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
   @media (min-width: 500px) {
     &--three {
+      display: initial;
       max-height: $gutter*1.5;
       padding: 3px $gutter;
       margin: auto;
+      margin-right: $gutter;
       background-color: #666;
       border-radius: 4px;
       align-self: center;
