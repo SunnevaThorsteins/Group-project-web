@@ -10,7 +10,7 @@
 .bar {
   display: inline-flex;
   width: 100%;
-  height: $gutter*3;
+  height: $gutter*2.5;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -43,9 +43,11 @@
 
   @media (min-width: 500px) {
     &--three {
+      display: initial;
       max-height: $gutter*1.5;
       padding: 3px $gutter;
       margin: auto;
+      margin-right: $gutter; 
       background-color: #666;
       border-radius: 4px;
       align-self: center;

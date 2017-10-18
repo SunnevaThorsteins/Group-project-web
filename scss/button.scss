@@ -4,6 +4,7 @@
   text-align: center;
 
   .button {
+    border: none;
     width: auto;
     margin: 0;
     font-size: 1rem;
@@ -16,20 +17,18 @@
     border-radius: 4px;
 
     &--one { //niðri á form síðu
-      padding: 10px $gutter*4.5;
+      padding: 10px $gutter*5.5;
+      margin-top: $gutter; 
     }
 
     &--two { //niðri á index síðu
-      padding: 10px $gutter*4.5;
-    }
-
-<<<<<<< HEAD
-    &--three { //uppi á index síðu
-=======
-    &--three {
->>>>>>> 9fce5c903805266f07430a1d5d864560dbbcf046
       margin-top: $gutter;
       padding: 10px $gutter*3;
+    }
+
+    &--three {
+      margin-top: $gutter*3;
+      padding: 10px $gutter*2;
     }
   }
 }
