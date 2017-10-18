@@ -76,13 +76,14 @@ main {
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
     background-size: cover; }
   .header--one .content {
-    margin-top: 200px;
+    margin: 300px;
     text-align: center;
     word-break: break-all; }
   .header--two {
     max-height: 70vh;
+    width: 100%;
     background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
-    background-position: center;
+    background-position: 0 0;
     background-size: contain; }
   .header--two .content {
     padding: 12rem 0;
