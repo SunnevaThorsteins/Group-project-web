@@ -5,24 +5,25 @@
   max-width: 100%;
   margin-left: $gutter;
 
+
   &--one {
     margin-bottom: $gutter;
     font-size: 1.5em;
     font-style: italic;
   }
 
-  &--one::first-letter { //ath!!!
-    text-indent: -$gutter;
-  }
-
   &--two {
     margin-bottom: $gutter;
     font-size: 0.75em;
   }
+}
 
-  @media (min-width: 600px) {
+@media (min-width: 400px) {
+  .blockquote {
+    @include columns(6);
     float: right;
+    width: 50%;
     padding: $gutter * 2 0 $gutter * 2 $gutter * 2;
-    margin: $gutter * 2 auto;
+    margin: 0 auto;
   }
 }
