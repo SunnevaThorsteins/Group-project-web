@@ -75,29 +75,33 @@ main {
 .header {
   width: 100%;
   max-width: 1200px;
+  min-height: 95vh;
   margin: 0 auto;
   opacity: 0.9; }
   .header--one {
     margin-top: 0;
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
-    background-size: cover;
-    margin-bottom: 120px;
-    min-height: 100vh; }
+    background-size: cover; }
   .header--one .content {
-    margin-top: 200px;
+    margin: 0 auto 40px;
     text-align: center;
     word-break: break-all; }
   .header--two {
     background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
-    background-position: center;
-    background-size: contain;
-    max-height: 70vh; }
+    background-position: 0 0;
+    background-size: cover; }
   .header--two .content {
     padding: 12rem 0;
-    margin: auto 0;
+    margin: auto;
     color: #fff;
     text-align: left;
     word-break: break-all; }
+  .header .heading--two {
+    background: "green"; }
+  .header .heading--one {
+    background: "green"; }
+  .header .container .button {
+    background: "green"; }
 
 @keyframes fade-in {
   from {
@@ -148,29 +152,21 @@ main {
 .container {
   text-align: center; }
   .container .button {
-    border: none;
     width: auto;
     margin: 0;
     font-size: 1rem;
     color: #eee;
     text-decoration: none;
-    border-radius: 4px;
-    background-color: #666;
     cursor: pointer;
     background-color: #666;
-    border-radius: 4px;
-    transition: background-color 500ms ease, color 500ms ease; }
+    border-radius: 4px; }
     .container .button--one {
-      padding: 10px 110px;
-      margin-top: 20px; }
+      padding: 10px 90px; }
     .container .button--two {
-      margin-top: 20px;
-      padding: 10px 60px; }
+      padding: 10px 90px; }
     .container .button--three {
-      margin-top: 60px;
-      padding: 10px 40px; }
-  .container .button:hover {
-    background-color: #383838; }
+      padding: 10px 60px;
+      margin-top: 20px; }
 
 @keyframes fade-in {
   from {
@@ -255,34 +251,37 @@ main {
 .form {
   display: flex;
   max-width: 1200px;
-  flex-direction: column;
-  background-color: "pink"; }
-  .form__container {
+  flex-direction: column; }
+  .form__row {
     display: flex;
-    margin: auto; }
-  .form--one {
-    background: pink;
-    margin: 0 auto; }
-  .form--two {
-    background: pink;
-    margin: auto; }
-  .form__content {
-    max-width: 100%;
-    height: inherit; }
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px; }
+  @media (min-width: 599px) {
+    .form__col {
+      width: 33.33333%;
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-right: 8.33333%;
+      margin-left: 8.33333%; } }
+  .form__item {
+    margin-bottom: 20px; }
   .form .boxes {
     border-radius: 2px;
     -webkit-appearance: none; }
-  .form .date {
+  .form .dates {
     display: flex;
     justify-content: space-between; }
-    .form .date .labels {
+    .form .dates .labels {
       width: 100%;
       flex-grow: 2;
       text-align: center; }
-    .form .date .genders {
+    .form .dates .genders {
       display: flex;
       flex-direction: column; }
-    .form .date .boxes {
+    .form .dates .boxes {
       width: 100%;
       text-align: center;
       border-radius: 2px;
@@ -296,28 +295,22 @@ main {
     opacity: 1; } }
 
 .blockquote {
-  width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
   max-width: 100%;
   margin-left: 20px; }
   .blockquote--one {
-    font-style: italic;
+    margin-bottom: 20px;
     font-size: 1.5em;
-    margin-bottom: 20px; }
-    .blockquote--one::first-letter {
-      text-indent: -20px; }
+    font-style: italic; }
+  .blockquote--one::first-letter {
+    text-indent: -20px; }
   .blockquote--two {
-    font-size: 0.75em;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 0.75em; }
   @media (min-width: 600px) {
     .blockquote {
-      width: 50%;
-      padding-right: 10px;
-      padding-left: 10px;
-      margin: 0 auto;
       float: right;
-      padding: 40px 0 40px 40px; } }
+      padding: 40px 0 40px 40px;
+      margin: 0 auto; } }
 
 @keyframes fade-in {
   from {

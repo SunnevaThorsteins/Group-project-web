@@ -10,8 +10,6 @@
     font-size: 1rem;
     color: #eee;
     text-decoration: none;
-    border-radius: 4px;
-    background-color: #666;
     cursor: pointer;
     background-color: #666;
     border-radius: 4px;
@@ -19,18 +17,18 @@
     transition: background-color 500ms ease, color 500ms ease;
 
     &--one { //niðri á form síðu
-      padding: 10px $gutter*5.5;
+      padding: 10px $gutter * 5.5;
       margin-top: $gutter;
     }
 
     &--two { //niðri á index síðu
       margin-top: $gutter;
-      padding: 10px $gutter*3;
+      padding: 10px $gutter * 3;
     }
 
     &--three {
-      margin-top: $gutter*3;
-      padding: 10px $gutter*2;
+      margin-top: $gutter * 3;
+      padding: 10px $gutter * 2;
     }
   }
   .button:hover {
