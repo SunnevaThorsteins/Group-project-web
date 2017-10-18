@@ -179,7 +179,6 @@ main {
     opacity: 1; } }
 
 .card {
-  background: pink;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -209,7 +208,9 @@ main {
   .card {
     flex-direction: row;
     align-items: center;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+    .card--three {
+      align-self: center; } }
 
 @keyframes fade-in {
   from {
