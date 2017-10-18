@@ -76,13 +76,13 @@ main {
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
     background-size: cover; }
   .header--one .content {
-    margin-top: 200px;
+    margin: 300px;
     text-align: center;
     word-break: break-all; }
   .header--two {
     min-height: 70vh;
     background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
-    background-position: center;
+    background-position: 0 0;
     background-size: contain; }
   .header--two .content {
     padding: 12rem 0;
@@ -169,6 +169,7 @@ main {
     opacity: 1; } }
 
 .card {
+  width: 100%;
   display: flex;
   width: 100%;
   overflow: auto;
@@ -266,25 +267,34 @@ main {
       margin-right: 8.33333%;
       margin-left: 8.33333%; } }
   .form__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
     margin-bottom: 20px; }
   .form .boxes {
-    border-radius: 2px;
+    padding: 5px;
+    border-width: 1px;
+    border-color: #383838;
+    border-radius: 3px;
     -webkit-appearance: none; }
-  .form .dates {
+  .form__dates {
+    width: 100%;
     display: flex;
-    justify-content: space-between; }
-    .form .dates .labels {
+    justify-content: space-around; }
+    .form__dates .labels {
       width: 100%;
       flex-grow: 2;
       text-align: center; }
-    .form .dates .genders {
-      display: flex;
-      flex-direction: column; }
-    .form .dates .boxes {
-      width: 100%;
-      text-align: center;
-      border-radius: 2px;
-      flex-grow: 2; }
+    .form__dates .labels--two {
+      align-self: flex-start; }
+  .form .genders {
+    display: flex;
+    flex-direction: column; }
+  .form .box {
+    width: 100%;
+    text-align: center;
+    flex-grow: 2; }
 
 @keyframes fade-in {
   from {

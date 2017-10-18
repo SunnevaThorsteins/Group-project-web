@@ -24,22 +24,37 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
     margin-bottom: $gutter;
   }
 
   .boxes {
-    border-radius: 2px;
+    padding: 5px;
+    border-width: 1px;
+    border-color: #383838;
+    border-radius: 3px;
     -webkit-appearance: none;
   }
 
-  .dates {
+
+  &__dates {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .labels {
       width: 100%;
       flex-grow: 2;
       text-align: center;
+      }
+
+      .labels--two{
+        align-self: flex-start;
+      }
+
     }
 
     .genders {
@@ -47,11 +62,9 @@
       flex-direction: column;
     }
 
-    .boxes {
+    .box {
       width: 100%;
       text-align: center;
-      border-radius: 2px;
       flex-grow: 2;
     }
   }
-}
