@@ -7,11 +7,11 @@
   opacity: 0.9;
 
   &--one {
+    min-height: 100vh;
     margin-top: 0;
+    margin-bottom: $gutter * 6;
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
     background-size: cover;
-    margin-bottom: $gutter*6;
-    min-height: 100vh;
   }
 
   &--one .content {
@@ -21,10 +21,10 @@
   }
 
   &--two {
+    max-height: 70vh;
     background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
     background-position: center;
     background-size: contain;
-    max-height: 70vh;
   }
 
   &--two .content {

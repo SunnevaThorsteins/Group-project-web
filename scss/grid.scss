@@ -44,7 +44,7 @@
     }
   }
 
-  &-smm {
+  &-xs {
     @media (max-width: 399px) {
       &-12 {
         @include columns(12);
@@ -59,17 +59,4 @@
       }
     }
   }
-
-  &-fluid {
-    @include columns(6);
-
-    @media (max-width: 599px) {
-      @include columns(6);
-    }
-
-    @media (max-width: 399px) {
-      @include columns(12);
-    }
-  }
-
 }
