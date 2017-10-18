@@ -76,14 +76,14 @@ main {
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
     background-size: cover; }
   .header--one .content {
-    margin: 300px;
+    margin: 200px;
     text-align: center;
     word-break: break-all; }
   .header--two {
-    min-height: 70vh;
-    background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
-    background-position: 0 0;
-    background-size: contain; }
+    max-width: 100%;
+    background: transparent url("img/bg-subpage.jpg") no-repeat fixed;
+    background-size: cover;
+    object-position: 0 0; }
   .header--two .content {
     padding: 12rem 0;
     margin: auto 0;
@@ -353,16 +353,19 @@ main {
     margin-bottom: 20px;
     font-size: 1.5em;
     font-style: italic; }
-  .blockquote--one::first-letter {
-    text-indent: -20px; }
   .blockquote--two {
     margin-bottom: 20px;
     font-size: 0.75em; }
-  @media (min-width: 600px) {
-    .blockquote {
-      float: right;
-      padding: 40px 0 40px 40px;
-      margin: 0 auto; } }
+
+@media (min-width: 400px) {
+  .blockquote {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+    float: right;
+    width: 50%;
+    padding: 40px 0 40px 40px;
+    margin: 0 auto; } }
 
 @keyframes fade-in {
   from {
