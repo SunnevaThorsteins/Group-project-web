@@ -2,8 +2,18 @@
 
 .text {
   width: 100%;
-  padding: 0;
-  margin: $gutter * 3.5 0;
-  margin-bottom: $gutter;
-  font-style: normal;
+
+  &__heading {
+    margin-top: $gutter * 4;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+  }
+
+  &__p {
+    margin: $gutter 0;
+  }
+
+  &__p:last-child {
+    margin-bottom: $gutter * 2;
+  }
 }

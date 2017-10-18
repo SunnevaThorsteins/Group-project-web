@@ -76,7 +76,7 @@ main {
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
     background-size: cover; }
   .header--one .content {
-    margin: 300px;
+    margin: 200px;
     text-align: center;
     word-break: break-all; }
   .header--two {
@@ -103,11 +103,14 @@ main {
     font-size: 4em; }
   .heading--two {
     margin-top: 80px;
-    margin-bottom: 20px;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-weight: normal; }
   .heading--three {
-    font-size: 1em;
-    text-align: center; }
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold; }
+  .heading--about {
+    font-weight: bold; }
   .heading--trans--one {
     opacity: 0;
     animation: fade-in 1s ease-in-out forwards 1s; }
@@ -125,11 +128,15 @@ main {
     opacity: 1; } }
 
 .text {
-  width: 100%;
-  padding: 0;
-  margin: 70px 0;
-  margin-bottom: 20px;
-  font-style: normal; }
+  width: 100%; }
+  .text__heading {
+    margin-top: 80px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold; }
+  .text__p {
+    margin: 20px 0; }
+  .text__p:last-child {
+    margin-bottom: 40px; }
 
 @keyframes fade-in {
   from {
@@ -142,7 +149,8 @@ main {
   .container .button {
     width: auto;
     margin: 0;
-    font-size: 1em;
+    font-size: 2em;
+    font-weight: normal;
     color: #eee;
     text-decoration: none;
     cursor: pointer;
@@ -151,13 +159,13 @@ main {
     border-radius: 4px;
     transition: background-color 500ms ease, color 500ms ease; }
     .container .button--one {
-      padding: 10px 110px;
+      padding: 10px 90px;
       margin-top: 20px; }
     .container .button--two {
-      padding: 10px 60px;
-      margin-top: 20px; }
+      padding: 20px 80px;
+      margin: 40px 0; }
     .container .button--three {
-      padding: 10px 40px;
+      padding: 20px;
       margin-top: 60px; }
   .container .button:hover {
     background-color: #383838; }
@@ -169,7 +177,6 @@ main {
     opacity: 1; } }
 
 .card {
-  width: 100%;
   display: flex;
   width: 100%;
   overflow: auto;
@@ -177,11 +184,12 @@ main {
   flex-direction: column; }
   .card__content {
     display: flex;
+    margin-bottom: 40px;
     flex-direction: column;
     align-items: center; }
   .card__img {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     border-radius: 100%; }
   .card__blockquote {
     font-size: 18px;
@@ -218,6 +226,8 @@ main {
   margin: 70px 0;
   overflow: hidden;
   flex-direction: row; }
+  .item__container {
+    margin-bottom: 20px; }
   .item__content {
     display: flex;
     width: 100%;
@@ -303,39 +313,34 @@ main {
     opacity: 1; } }
 
 .footer {
-  position: absolute;
   width: 100%;
   max-width: 1200px;
-  margin-top: 30px;
+  margin: 20px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.8); }
-
-.footer__row {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  padding: 0 300px; }
-
-.footer__content {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center; }
-
-.footer__col {
-  padding-top: 20px;
-  padding-bottom: 40px;
-  align-self: flex-start; }
-
-.footer__copyright {
-  display: flex;
-  width: 90vw;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-size: 14px;
-  color: #aaa;
-  border-top: 2px solid #aaa;
-  justify-content: center; }
+  .footer__row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 300px; }
+  .footer__content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center; }
+  .footer__col {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    align-self: flex-start; }
+  .footer__copyright {
+    display: flex;
+    width: 90vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: #aaa;
+    border-top: 2px solid #aaa;
+    justify-content: center; }
 
 @keyframes fade-in {
   from {
@@ -344,6 +349,9 @@ main {
     opacity: 1; } }
 
 .blockquote {
+  width: 50%;
+  padding-right: 10px;
+  padding-left: 10px;
   max-width: 100%;
   margin-left: 20px; }
   .blockquote--one {
@@ -359,7 +367,7 @@ main {
     .blockquote {
       float: right;
       padding: 40px 0 40px 40px;
-      margin: 0 auto; } }
+      margin: 40px auto; } }
 
 @keyframes fade-in {
   from {

@@ -6,7 +6,8 @@
   .button {
     width: auto;
     margin: 0;
-    font-size: 1em;
+    font-size: 2em;
+    font-weight: normal;
     color: #eee;
     text-decoration: none;
     cursor: pointer;
@@ -16,17 +17,17 @@
     transition: background-color 500ms ease, color 500ms ease;
 
     &--one { //niðri á form síðu
-      padding: 10px $gutter * 5.5;
+      padding: 10px $gutter * 4.5;
       margin-top: $gutter;
     }
 
     &--two { //niðri á index síðu
-      padding: 10px $gutter * 3;
-      margin-top: $gutter;
+      padding: $gutter $gutter * 4;
+      margin: $gutter * 2 0;
     }
 
     &--three {
-      padding: 10px $gutter * 2;
+      padding: $gutter;
       margin-top: $gutter * 3;
     }
   }

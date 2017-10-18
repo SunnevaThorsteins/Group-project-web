@@ -9,13 +9,18 @@
 
   &--two {
     margin-top: $gutter * 4;
-    margin-bottom: $gutter;
     font-size: 1.5rem;
+    font-weight: normal;
   }
 
   &--three {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
+    font-weight: bold;
+  }
+
+  &--about {
+    font-weight: bold;
   }
 
   &--trans {

@@ -1,6 +1,7 @@
 @import "scss/variables";
 
 .blockquote {
+  @include columns(6);
   max-width: 100%;
   margin-left: $gutter;
 
@@ -22,6 +23,6 @@
   @media (min-width: 600px) {
     float: right;
     padding: $gutter * 2 0 $gutter * 2 $gutter * 2;
-    margin: 0 auto;
+    margin: $gutter * 2 auto;
   }
 }
