@@ -64,24 +64,26 @@ main {
 .header {
   width: 100%;
   max-width: 1200px;
-  min-height: 95vh;
   margin: 0 auto;
   opacity: 0.9; }
   .header--one {
     margin-top: 0;
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
-    background-size: cover; }
+    background-size: cover;
+    margin-bottom: 120px;
+    min-height: 100vh; }
   .header--one .content {
-    margin: 0 auto 40px;
+    margin-top: 200px;
     text-align: center;
     word-break: break-all; }
   .header--two {
     background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
-    background-position: 0 0;
-    background-size: cover; }
+    background-position: center;
+    background-size: contain;
+    max-height: 70vh; }
   .header--two .content {
     padding: 12rem 0;
-    margin: auto;
+    margin: auto 0;
     color: #fff;
     text-align: left;
     word-break: break-all; }
@@ -111,6 +113,9 @@ main {
     opacity: 1; } }
 
 .text {
+  width: 100%;
+  padding: 0;
+  margin: 70px 0;
   margin-bottom: 20px;
   font-style: normal; }
 
@@ -127,7 +132,8 @@ main {
     background-color: #666;
     cursor: pointer;
     background-color: #666;
-    border-radius: 4px; }
+    border-radius: 4px;
+    transition: background-color 500ms ease, color 500ms ease; }
     .container .button--one {
       padding: 10px 110px;
       margin-top: 20px; }
@@ -137,6 +143,8 @@ main {
     .container .button--three {
       margin-top: 60px;
       padding: 10px 40px; }
+  .container .button:hover {
+    background-color: #383838; }
 
 .card {
   width: 100%;
@@ -291,9 +299,10 @@ main {
   margin: 0;
   list-style: none;
   flex-direction: row;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  transition: background-color 500ms ease, color 500ms ease; }
   .bar--content a {
     color: #fff;
     text-decoration: none; }
@@ -308,6 +317,8 @@ main {
     background-color: transparent; }
   .bar--three {
     display: none; }
+  .bar--three:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
   @media (min-width: 500px) {
     .bar--three {
       display: initial;
