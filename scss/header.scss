@@ -21,8 +21,7 @@
   }
 
   &--two {
-    max-height: 70vh;
-    width: 100%;
+    min-height: 70vh;
     background: transparent url("img/bg-subpage.jpg") no-repeat fixed 50% 50%;
     background-position: 0 0;
     background-size: contain;
