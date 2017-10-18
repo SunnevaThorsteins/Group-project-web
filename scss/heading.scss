@@ -19,7 +19,20 @@
   }
 
   &--trans {
-    opacity: 0;
-    //transition: opacity 1;
+    &--one {
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards 1s;
+    }
+
+    &--two {
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards 2s;
+    }
+
+    &--three {
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards 3s;
+    }
+
   }
 }

@@ -10,3 +10,15 @@
 // breytur fyrir mikið notaðar stærðir
 $max-width: 1200px;
 $gutter: 20px;
+
+//animation
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
