@@ -24,7 +24,10 @@
   &__content {
     max-width: 100%;
     height: inherit;
+  }
 
+  &__item {
+    margin-bottom: $gutter;
   }
 
   .boxes {
@@ -32,7 +35,7 @@
     -webkit-appearance: none;
   }
 
-  .date {
+  .dates {
     display: flex;
     justify-content: space-between;
 
