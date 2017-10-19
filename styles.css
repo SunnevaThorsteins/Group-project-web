@@ -106,15 +106,16 @@ main {
       margin-top: 80px;
       margin-bottom: 20px; }
   .heading--three {
+    align-self: center;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center; }
   .heading--about {
     font-weight: bold; }
   .heading--trans--one {
+    font-weight: normal;
     opacity: 0;
-    animation: fade-in 1s ease-in-out forwards 1s;
-    word-break: normal; }
+    animation: fade-in 1s ease-in-out forwards 1s; }
   .heading--trans--two {
     opacity: 0;
     animation: fade-in 1s ease-in-out forwards 2s; }
@@ -318,10 +319,10 @@ main {
       margin-left: 8.33333%; } }
   .form__item {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     width: 100%;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap; }
   .form .boxes {
     padding: 5px;
     border-width: 1px;
