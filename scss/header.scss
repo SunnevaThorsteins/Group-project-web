@@ -13,9 +13,8 @@
   }
 
   &--one .content {
-    margin: $gutter * 10;
+    margin-top: $gutter * 10;
     text-align: center;
-    word-break: break-all;
   }
 
   &--two {

@@ -118,9 +118,8 @@ main {
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
     background-size: cover; }
   .header--one .content {
-    margin: 200px;
-    text-align: center;
-    word-break: break-all; }
+    margin-top: 200px;
+    text-align: center; }
   .header--two {
     background: transparent url("img/bg-subpage.jpg") no-repeat fixed;
     background-size: cover;
@@ -142,6 +141,7 @@ main {
       margin-top: 80px;
       margin-bottom: 20px; }
   .heading--three {
+    align-self: center;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center; }
@@ -152,9 +152,13 @@ main {
     opacity: 0;
     animation: fade-in 1s ease-in-out forwards 1s; }
   .heading--trans--two {
+    margin: auto;
+    word-break: normal;
     opacity: 0;
     animation: fade-in 1s ease-in-out forwards 2s; }
   .heading--trans--three {
+    margin: auto;
+    word-break: normal;
     opacity: 0;
     animation: fade-in 1s ease-in-out forwards 3s; }
 

@@ -16,6 +16,7 @@
   }
 
   &--three {
+    align-self: center;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
@@ -33,11 +34,15 @@
     }
 
     &--two {
+      margin: auto;
+      word-break: normal;
       opacity: 0;
       animation: fade-in 1s ease-in-out forwards 2s;
     }
 
     &--three {
+      margin: auto;
+      word-break: normal;
       opacity: 0;
       animation: fade-in 1s ease-in-out forwards 3s;
     }
