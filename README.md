@@ -3,9 +3,9 @@
 Til þess að opna þetta verkefni þarf að fylgja eftirfarandi leiðbeiningum:
 
 Mikilvægir linkar: 
-   git download: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-   node download: https://nodejs.org/en/download/current/
-   github repo: https://github.com/asdiserla/hopverkefni
+   - git download: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+   - node download: https://nodejs.org/en/download/current/
+   - github repo: https://github.com/asdiserla/hopverkefni
 
 1. Fyrst þarf að downloda git og node (sjá mikilvægir linkar hér fyrir ofan). Passa þarf upp á að fylgja réttum leiðbeiningum fyrir stýrikerfið í þeirri tölvu sem notast er við.
 
