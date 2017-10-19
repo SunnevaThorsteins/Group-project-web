@@ -1,7 +1,5 @@
 # Stóra verkefni 1: Fooþjónusta vefsíða
 
-****************************************
-
 Til þess að opna þetta verkefni þarf að fylgja eftirfarandi leiðbeiningum:
 
 1. Fyrst þarf að downloda git og node (sjá mikilvægir linkar hér fyrir neðan). Passa þarf upp á að fylgja réttum leiðbeiningum fyrir stýrikerfið í þeirri tölvu sem notast er við.
@@ -23,57 +21,18 @@ Mikilvægir linkar:
    - github repo: https://github.com/asdiserla/hopverkefni
    
 ****************************************
-  
-  
+Uppsetning verkefnisins: 
 
+- verkefnið er samansett af mörgum skrám. Aðalskrárnar eru í lausu inní repoinu það eru t.d. trjár html skrár, pacagejson, styleguid.css styles.css ofl. 
+- minni scss skrár eru svo allar saman í möppunni scss. Þær eru 12 talsins og þeim er öllum importað inn í styles.sass skránna sem síðan þýðist yfir í styles.css srkánna sem stílar í verkefninu. 
+- myndir sem birtar eru á vefnum eru í möppu sem heitir img.
+- þegar við vorum að stíla verkefnið ákváðum við að notast við classa skilgreiningar og hafa @media alltaf neðst í scss skránnum. 
 
+****************************************
+Upplýsingar um aðstandendur verkefnisins: 
 
+- Ásdís Erla Jóhannsdóttir: aej25@hi.is
+- Helga Þöll Guðjónsdóttir: hthg13@hi.is
+- Jónas Helgi Sverrisson: jhs18@hi.is
+- Sunneva Þorsteinsdóttir: sth334@hi.is
 
-<ul>Almennt: 
-<li>Skrifa HTML fyrir
-  <li>Index.html</li>
-  <li>Um.html</li>
-  <li>Form.html</li>
-  </li>
-<li>Skrifa Styleguid</li>
-<li>Skrifa eitt main SCSS sem við importum allt í<li/>
-<li>Scss skrár:
-  <li>Header/navigation</li>
-  <li>Heading</li>
-  <li>Cover</li>
-  <li>Grid</li>
-  <li>button</li>
-  <li>text</li>
-  <li>Blockquote</li>
-  <li>footer</li>
-  <li>cardlist</li>
-  <li>card</li>
-  <li>form</li><br>
-  <strong>Hver gerir hvað:</strong><br>
-  Jónas:<br>
-  <li>Footer html-ið</li>
-  <li>Header html-ið</li>
-  Ásdís:<br>
-  <li>Forsíðu html-ið</li>
-  <li>Setja font-ið inn í skrárnar</li>
-  <li>Sass fyrir Header</li>
-  Sunneva:<br>
-  <li>Um html-ið</li>
-  <li>Form html-ið</li>
-  Helga:<br>
-  <li>Breytuskjalið</li>
-  <li>Styleguid</li><br>
-  Laus verkefni:<br>
-  <li>Header/navigation Sass</li>
-  <li>Heading Sass</li>
-  <li>Cover Sass</li>
-  <li>Grid Sass</li>
-  <li>button Sass</li>
-  <li>text Sass</li>
-  <li>Blockquote Sass</li>
-  <li>footer Sass</li>
-  <li>cardlist Sass</li>
-  <li>card Sass</li>
-  <li>form Sass</li>
-
-<strong>muna að pusha áður en við pullum</strong>
