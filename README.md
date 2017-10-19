@@ -12,11 +12,11 @@ Mikilvægir linkar:
 2. Næst þarf á að klóna repo-ið af github inná local hjá notanda (sjá mikilvægir linkar hér fyrir ofan). Það er gert með því að fara upp í hægra hornið á upphafssíðunni á githup repoi verkefnisins. Þar er grænn takki sem á stendur "clone or download". Þá kemur upp gluggi sem m.a. inniheldur link. Það þarf að copy-a þann link, en hann mun gera notandanum keift að opna þetta verkefni í sinni tölvu. 
 
 3. Síðan er farið í command line glugga og stimpla inn eftirfarandi skipanir
-  > cd /
-  > cd ...slóð á þann stað í tölvunni sem verkefnið á að vera í...
-  > npm install (setur upp node pakkastjórann í tölvunni)
-  > git clone ...linkur í verkefni frá skrefi 2...
-  > npm run dev (dev er skipun sem er búin að linka saman sass og browser sink í pacagejson skránni)
+  - cd /
+  - cd ...slóð á þann stað í tölvunni sem verkefnið á að vera í...
+  - npm install (setur upp node pakkastjórann í tölvunni)
+  - git clone ...linkur í verkefni frá skrefi 2...
+  - npm run dev (dev er skipun sem er búin að linka saman sass og browser sink í pacagejson skránni)
 
 4. Núna ætti síðan að vera búin að opnast á vefnum.
   
