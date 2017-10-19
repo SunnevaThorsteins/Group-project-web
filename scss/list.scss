@@ -1,8 +1,42 @@
 @import "scss/variables";
 
 .list {
-  //padding: $gutter*6 0;
+  padding-bottom: $gutter * 2;
+}
 
+.item {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: $gutter * 3.5 0;
+  overflow: hidden;
+  flex-direction: row;
+
+  &__content {
+    display: flex;
+    width: 100%;
+    margin-left: $gutter / 2;
+    flex-direction: column;
+  }
+
+  &__heading {
+    font-family: "Roboto Slab", serif;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  &__img {
+    width: 30px;
+    height: 30px;
+  }
+
+  &:last-child {
+    margin-bottom: $gutter * 2;
+  }
+}
+
+
+/*
   &__container {
     margin-bottom: $gutter;
   }
@@ -37,4 +71,4 @@
       height: 30px;
     }
   }
-}
+}*/
