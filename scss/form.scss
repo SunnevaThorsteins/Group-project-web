@@ -1,10 +1,8 @@
-@import "scss/variables";
-
 .form {
   display: flex;
   max-width: $max-width;
-  margin-top: $gutter * 4;
-  margin-bottom: $gutter;
+  margin: $gutter * 4 $gutter $gutter;
+  //margin-bottom: $gutter;
   flex-direction: column;
 
   &__row {
@@ -27,46 +25,43 @@
 
   &__item {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     width: 100%;
     margin-bottom: $gutter;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .boxes {
     padding: 5px;
-    border-width: 1px;
     border-color: #383838;
+    border-width: 1px;
     border-radius: 3px;
-    -webkit-appearance: none;
   }
 
-
   &__dates {
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: space-around;
 
     .labels {
       width: 100%;
       flex-grow: 2;
       text-align: center;
-      }
-
-      .labels--two{
-        align-self: flex-start;
-      }
-
     }
 
-    .genders {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .box {
-      width: 100%;
-      text-align: center;
-      flex-grow: 2;
+    .labels--two {
+      align-self: flex-start;
     }
   }
+
+  .genders {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    text-align: center;
+    flex-grow: 2;
+  }
+}

@@ -1,9 +1,7 @@
-@import "scss/variables";
-
 .footer {
   width: 100%;
   max-width: $max-width;
-  margin: $gutter;
+  margin: $gutter $gutter * 1.6 0;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.8);
 

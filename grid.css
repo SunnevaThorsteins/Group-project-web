@@ -26,11 +26,11 @@
 }
 
 /* Styling */
-html {
+html { /*stylelint-disable-line*/
   position: relative;
 }
 
-html.grid::before {
+html.grid::before { /*stylelint-disable-line*/
   position: absolute;
   top: 0;
   right: 0;

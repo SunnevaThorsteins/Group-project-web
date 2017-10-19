@@ -1,10 +1,7 @@
-@import "scss/variables";
-
 .blockquote {
   @include columns(6);
   max-width: 100%;
   margin-left: $gutter;
-
 
   &--one {
     margin-bottom: $gutter;
