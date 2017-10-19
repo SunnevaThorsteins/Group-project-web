@@ -3,7 +3,11 @@
 .list {
   //padding: $gutter*6 0;
 
-  .item {
+  &__container {
+    margin-bottom: $gutter;
+  }
+
+  &__content {
     display: flex;
     width: 100%;
     padding: 0;

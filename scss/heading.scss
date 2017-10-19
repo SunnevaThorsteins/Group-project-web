@@ -18,8 +18,13 @@
   }
 
   &--three {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
+    font-weight: bold;
+  }
+
+  &--about {
+    font-weight: bold;
   }
 
   &--trans {
