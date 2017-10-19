@@ -17,9 +17,8 @@
 
 @media (min-width: 400px) {
   .blockquote {
-    @include columns(6);
     float: right;
-    width: 50%;
+    @include columns(6);
     padding: $gutter * 2 0 $gutter * 2 $gutter * 2;
     margin: 0 auto;
   }
