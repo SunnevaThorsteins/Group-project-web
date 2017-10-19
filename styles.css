@@ -76,9 +76,8 @@ main {
     background: transparent url("img/bg.jpg") no-repeat fixed 50% 50%;
     background-size: cover; }
   .header--one .content {
-    margin: 200px;
-    text-align: center;
-    word-break: break-all; }
+    margin-top: 200px;
+    text-align: center; }
   .header--two {
     background: transparent url("img/bg-subpage.jpg") no-repeat fixed;
     background-size: cover;
@@ -113,13 +112,19 @@ main {
   .heading--about {
     font-weight: bold; }
   .heading--trans--one {
+    word-break: normal;
     font-weight: normal;
+    margin: auto;
     opacity: 0;
     animation: fade-in 1s ease-in-out forwards 1s; }
   .heading--trans--two {
+    word-break: normal;
+    margin: auto;
     opacity: 0;
     animation: fade-in 1s ease-in-out forwards 2s; }
   .heading--trans--three {
+    word-break: normal;
+    margin: auto;
     opacity: 0;
     animation: fade-in 1s ease-in-out forwards 3s; }
 
