@@ -108,8 +108,8 @@ main {
       margin-bottom: 20px; }
   .heading--three {
     font-size: 1.5em;
-    text-align: center;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
   .heading--about {
     font-weight: bold; }
   .heading--trans--one {
@@ -399,6 +399,7 @@ main {
   align-items: center;
   transition: background-color 500ms ease, color 500ms ease; }
   .bar--content a {
+    /*stylelint-disable-line*/
     color: #fff;
     text-decoration: none; }
   .bar--one {
