@@ -80,7 +80,6 @@ main {
     text-align: center;
     word-break: break-all; }
   .header--two {
-    max-width: 100%;
     background: transparent url("img/bg-subpage.jpg") no-repeat fixed;
     background-size: cover;
     object-position: 0 0; }
@@ -260,9 +259,9 @@ main {
 .form {
   display: flex;
   max-width: 1200px;
-  flex-direction: column;
   margin-top: 80px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  flex-direction: column; }
   .form__row {
     width: 100%;
     padding-right: 10px;
