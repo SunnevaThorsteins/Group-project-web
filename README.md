@@ -1,5 +1,30 @@
-# hopverkefni
-<strong>MUNA AÐ BREYTA ÞEGAR VIÐ ERUM BÚIN!</strong> (Þarf að vera með upplýsingar um keyrslu en ekki þetta hehe) <br>
+# Stóra verkefni 1: Fooþjónusta vefsíða
+
+Til þess að opna þetta verkefni þarf að fylgja eftirfarandi leiðbeiningum:
+
+Mikilvægir linkar: 
+  1. git download: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+  2. node download: https://nodejs.org/en/download/current/
+  3. github repo: https://github.com/asdiserla/hopverkefni
+
+1. Fyrst þarf að downloda git (1) og node (2). Passa þarf upp á að fylgja réttum leiðbeiningum fyrir stýrikerfið í þeirri tölvu sem notast er við.
+
+2. Næst þarf á að klóna repo-ið af github (3) inná local hjá notanda. Það er gert með því að fara upp í hægra hornið á upphafssíðunni á githup repoi verkefnisins. Þar er grænn takki sem á stendur "clone or download". Þá kemur upp gluggi sem m.a. inniheldur link. Það þarf að copy-a þann link, en hann mun gera notandanum keift að opna þetta verkefni í sinni tölvu. 
+
+3. Síðan er farið í command line glugga og stimpla inn eftirfarandi skipanir
+  > cd /
+  > cd ...slóð á þann stað í tölvunni sem verkefnið á að vera í...
+  > npm install (setur upp node pakkastjórann í tölvunni)
+  > git clone ...linkur í verkefni frá skrefi 2...
+  > npm run dev (dev er skipun sem er búin að linka saman sass og browser sink í pacagejson skránni)
+
+4. Núna ætti síðan að vera búin að opnast á vefnum.
+  
+  
+
+
+
+
 <ul>Almennt: 
 <li>Skrifa HTML fyrir
   <li>Index.html</li>
